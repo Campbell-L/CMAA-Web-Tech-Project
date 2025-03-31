@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Mack Cropman">
+    <meta name="description" content="Application form for job position">
+    <meta name="keywords" content="form, application, job, position, apply, submit">
+    <title>Apply</title>
+</head>
+
+<body>
+    <h1>Application Form</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="jobs.html">jobs</a></li>
+        </ul>
+        <p>Please fill out the form below to apply for the job position.</p>
+        <p>All fields are required unless otherwise specified.</p>
+
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <fieldset>
+                <legend>Job Details</legend>
+                <!-- Job Reference Number -->
+                <label for="job_ref">Job Reference Number:</label>
+                <input type="text" id="job_ref" name="job_ref" pattern="[A-Za-z0-9]{5}" maxlength="5" required
+                    tooltip="Max 5 alphanumeric characters">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <!-- First Name -->
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]{1,20}" maxlength="20" required
+                    tooltip="Max 20 alphabetic characters">
+                <br>
+
+                <!-- Last Name -->
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" pattern="[A-Za-z]{1,20}" maxlength="20" required
+                    tooltip="Max 20 alphabetic characters">
+                <br>
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required min="01/01/1900" max="31/03/2025" tooltip="DD-MM-YYYY">
+                <br>
+
+                <!-- Gender -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="other">Other</label>
+                    <input type="radio" id="other" name="gender" value="Other" required>
+                </fieldset>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Address</legend>
+                <!-- Street Address -->
+                <label for="street_address">Street Address:</label>
+                <input type="text" id="street_address" name="street_address" maxlength="40" required>
+                <br>
+
+                <!-- Suburb/Town -->
+                <label for="suburb_town">Suburb/Town:</label>
+                <input type="text" id="suburb_town" name="suburb_town" maxlength="40" required>
+                <br>
+
+                <!-- State -->
+                <label for="state">State:</label>
+                <select id="state" name="state" required>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+                <br>
+
+                <!-- Postcode -->
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" required tooltip="4 digits">
+                <br>
+
+            </fieldset>
+
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" maxlength="50"
+                tooltip="must be a valid email address">
+            <br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" pattern="[0-9 ]{8,12}" maxlength="12" required tooltip="8 to 12 digits">
+            <br>
+
+            <!-- Skills -->
+            <fieldset>
+                <legend>Skills:</legend>
+                <label for="skill1">
+                    <input type="checkbox" id="skill1" name="skills" value="1"> 1
+                </label>
+                <br>
+                <label for="skill2">
+                    <input type="checkbox" id="skill2" name="skills" value="2"> 2
+                </label>
+                <br>
+                <label for="skill3">
+                    <input type="checkbox" id="skill3" name="skills" value="3"> 3
+                </label>
+                <br>
+                <label for="other_skills">
+                    <input type="checkbox" id="other_skills" name="skills" value="Other"> Other skills...
+                </label>
+                <br>
+                <textarea id="other_skills_text" name="other_skills_text" rows="4" cols="50"
+                    placeholder="Please describe your other skills here if applicable." disabled></textarea>
+            </fieldset>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+
+        </form>
+
+        <script>
+            // Enable the "Other skills" textarea if checkbox is checked
+            document.getElementById('other_skills').addEventListener('change', function () {
+                var otherSkillsTextarea = document.getElementById('other_skills_text');
+                if (this.checked) {
+                    otherSkillsTextarea.disabled = false;
+                } else {
+                    otherSkillsTextarea.disabled = true;
+                }
+            });
+        </script>
+
+</body>
+
+</html>
