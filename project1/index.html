@@ -16,60 +16,88 @@
 <!-- https://www.vic.gov.au/school-jobs -->
 
 <body>
-    <header>
+    <header id="head">
         <!-- Navigation bar -->
         <nav>
             <!-- Company logo -->
-             <img id="logo" alt="ATCM logo, an image of-" title="ATCM logo" src="images/ATCMLogo1png.png">
+             <img id="logo" alt="ATCM logo, an image of-" title="ATCM logo" src="images/temp_logo.png">
             <!-- Company Name -->
-            <h1 id="name_acronynm">ATCM</h1>
-            <h1 id="name_full">Austech Computing and Manufacturing</h1>
+            <h1 id="name">Austech Computing and Manufacturing</h1>
 
             <!-- Menu links -->
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>                
                 <li><a href="apply.html">Apply</a></li>
-                <li><a href="jobs.html">jobs</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
 
-            <a href="mailto:info@austechcomputing.com.au">info@ATCM.com.au</a>
+            <a class="email" href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
         </nav>
-        <hr>
-
-        <!-- Title -->
-         <h1>Home</h1>
-        <!-- Introduction, what do we do -->
-        <h2>Welcome</h2>
-        <p>Our company is world leading in our idustry, and blah blah waffle waffle. As possionate people we blah blah blah.</p>
-        <p>We are looking for like-minded and skilled candidates blah.</p>
-
-        <!-- Company Beneifits -->
-        <h3>Why Join Us?</h3>
-        <p>At Cmaa we care about our employees health, wellbeing, and growth</p>
-        <p>Thats why working at Cmaa means:</p>
-        <ul>
-            <li>Excellent health care plans</li>
-            <li>Fantastic rates on paid leave</li>
-            <li>Modern and well kept workplace</li>
-            <li>Work-at-home flexibility</li>
-            <li>Friendly and inclusive working enviroment (see our <a href="index.html">values and policies</a>)</li>
-            <li>World class training programs</li>
-            <li>Public transport assistance</li>
-            <li>Free childcare services</li>
-            <li>Company-paid yearly international travel</li>
-            <li>Up to &dollar;1000 bounus to spend on personal development</li>
-        </ul>
-
-        <!-- NOTE: make a page for benefits if have time? Need to check assignment guidlines-->
-        <!-- Link to benefit specifics -->
-        <p>View the benefits page <a target="self" title="To Beneifits" href="index.html">here</a> to see the full list of benefits</p>
-        <!-- Link to job listing page -->
-        <p>Sounds good? Check out our <a target="self" title="To Job listing" href="jobs.html">job listing page</a></p>
+        <hr>        
     </header>
 
-    <footer>
+    <div id="main_content">
+        <!-- Title -->
+        <h1>Home</h1>
+
+        <!-- Introduction -->
+        <p>The forefront of technological inovation, finding the solutions of the future.</p>
+        <br>
+
+        <!-- What does this company do -->
+        <div id="what_is_atcm">
+            <h2>Who are we?</h2>
+            <p>Austech is an industry leading information technology service provider and hardware developer. We provide IT services for other companies or independant bodies, including contract work, reviews, and labour outsourcing. Austech is also a certified hardware manufacturer, with decades of experience, and ongoing research into nanotechonlogy.</p>
+        </div>
+        
+        <!-- Company Benefits -->
+        <div id="benefits">
+            <h2>Why Join Us?</h2>
+            <p>Not only do you get to be part of one of the world's best IT service providers and researchers, but we care about your health, wellbeing, and growth. Thats why working at Austech means:</p>
+            <ul>
+                <li>Excellent healthcare plans</li>
+                <li>Fantastic rates on paid leave</li>
+                <li>Modern, well kept, and safe workplaces</li>
+                <li>Work-at-home flexibility</li>
+                <li>Friendly and inclusive working enviroment (see our <a href="#values">values</a>)</li>
+                <li>World class training programs</li>
+                <li>Public transport assistance</li>
+                <li>Free childcare services</li>
+                <li>Company-paid yearly international travel</li>
+                <li>Up to &dollar;1000 bounus to spend on personal development</li>
+            </ul>
+
+            <!-- Link to job listing page -->
+            <p>Sounds good? Check out our <a target="self" title="To Job listing" href="jobs.html">job listing page</a></p>
+        </div>
+        <br>
+
+        <!-- Company values -->
+        <h2>Our Company Values</h2>
+        <div id="values">
+            <div>
+                <h4>Respect</h4>
+                <p>Respect is our most important core values, it is what allows us to collaborate, communicate and open our minds to new ideas. We belive all workplaces should be safe and inclusive places.</p>
+            </div>
+
+            <div>
+                <h4>Inovation</h4>
+                <p>There are always better, more efficient and effective solutions, in a world that is constantly evolving we embrace change and radical thinking.</p>
+            </div>
+
+            <div>
+                <h4>Learning and Curiosity</h4>
+                <p>We belive that our employees should always have the opportuities to further their skills, and diversify their knowledge. Here at Austech we allow every employee the room for growth.</p>
+            </div>
+        </div>
         <br>
         <hr>
+    </div>
+
+    <footer id="foot">
+        <!-- Contact email -->
+        <p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
         <!-- Jira link -->
         <p>link to Jira: <a hreflang="en" target="_blank" title="To the team's Jira project" href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">https://cmaa8623.atlassian.net/jira/software/projects</a></p>
     </footer>

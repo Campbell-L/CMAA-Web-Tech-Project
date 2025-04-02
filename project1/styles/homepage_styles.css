@@ -6,34 +6,47 @@ last modified: 2/04/2025
 description: Styles the website home page; index.html
 */
 
-/* Horizontal navigation bar */
 /* Uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
+
+/* Logo */
 #logo {
     width: 5em;
+    max-width: 100%;
 }
-
+/* Navigation bar */
 nav {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    /* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
+    background-image: url('images/temp_nav_background.jpg');
+    background-position: top left;
+    background-size: contain;
+    background-repeat: repeat-x;
 }
-
+/* Title */
 nav h1 {
     padding-left: 1em;
     padding-right: 1em;
 }
-
-nav h4 {
-    display: flex;
-    align-self: flex-end;
-    padding-right: 2em;
+/* info email Button */
+nav a.email {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 0.7em;
+    border: 2px, solid, rgb(0, 110, 16);
+}
+/* info email Button on hover */
+nav a.email:hover {
+    color: rgb(255, 255, 255);
+    background-color: #135d11;
 }
 
-nav h4 a {
+/* Menu buttons */
+nav ul {
     display: flex;
-    align-self: flex-end;
+    align-content: space-around;
 }
 
 nav ul li {
@@ -43,5 +56,69 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 1.2em;
+    color: #106727;
+}
+
+nav ul li a:hover {
+    color: #bac4bd;
+}
+
+
+/* Whole page link styling */
+a{
     text-decoration: none;
+    color: rgb(40, 179, 47);
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(41, 101, 44);
+}
+
+
+/* Join us styling */
+#benefits {
+    max-width: 35em;
+}
+
+
+/* Company values stlying and spacing */
+#values {
+    display: flex;
+    justify-content: space-around;
+}
+
+#values div{
+    padding: 0.7em;
+    border: 3px,solid,rgb(90, 122, 48);
+    margin: 1%;
+    background-color: #ffffff;
+    max-width: 25em;
+}
+
+#values div h4{
+    margin: 0;
+    color:#000000;
+}
+
+#values div p{
+    margin: 0;
+    color: #000000;
+}
+
+#foot {
+    background-color: #244e22;
+    padding:2em;
+    color:#ffffff;
+}
+
+/* Footer link stlying */
+
+#foot a{
+    color:#95fc92;
+}
+
+#foot a:hover{
+    color:#778276;
 }
