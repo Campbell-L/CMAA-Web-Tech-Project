@@ -1,0 +1,47 @@
+/*
+filename: Homepage Styles
+author: Asha Burdack
+created: 2/04/2025
+last modified: 2/04/2025
+description: Styles the website home page; index.html
+*/
+
+/* Horizontal navigation bar */
+/* Uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
+#logo {
+    width: 5em;
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+nav h1 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+nav h4 {
+    display: flex;
+    align-self: flex-end;
+    padding-right: 2em;
+}
+
+nav h4 a {
+    display: flex;
+    align-self: flex-end;
+}
+
+nav ul li {
+    font-size: large;
+    display: inline;
+    padding-right: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
