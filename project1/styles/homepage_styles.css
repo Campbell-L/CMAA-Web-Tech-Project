@@ -8,6 +8,20 @@ description: Styles the website home page; index.html
 
 /* Uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
 
+/*
+notes:
+things to add
+link to home page on logo click
+better font
+increase overall text size
+add a "company graphic"? is this a logo, or an image?
+
+adaptive css to screen size change:
+company values stack after screen gets too small
+menu link buttons stack after screen gets too small
+maybe; the various pharagraphs go side-by-side if wide enough
+*/
+
 /* Logo */
 #logo {
     width: 5em;
