@@ -1,0 +1,14 @@
+#group-photo {
+	float: right;
+	background-color: antiquewhite;
+	border: 0.2rem solid black;
+	margin-right: 20%;
+}
+
+#group-photo img{
+	width: 20rem;
+}
+
+#about-article {
+	float: left;
+}
