@@ -27,6 +27,13 @@ maybe; the various pharagraphs go side-by-side if wide enough
     width: 5em;
     max-width: 100%;
 }
+
+header {
+	position: sticky;
+	top: 0;
+	background-color: #ffffff;
+}
+
 /* Navigation bar */
 nav {
     list-style-type: none;
