@@ -8,16 +8,32 @@
     <meta name="description" content="Application form for job position">
     <meta name="keywords" content="form, application, job, position, apply, submit">
     <title>Apply</title>
+    <link rel="stylesheet" type="text/css" href="styles/homepage_styles.css">
 </head>
 
 <body>
+    <header id="head">
+        <!-- Navigation bar -->
+        <nav>
+            <!-- Company logo -->
+             <img id="logo" alt="ATCM logo, an image of-" title="ATCM logo" src="images/temp_logo.png">
+            <!-- Company Name -->
+            <h1 id="name">Austech Computing and Manufacturing</h1>
+
+            <!-- Menu links -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>                
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <a class="email" href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
+        </nav>
+        <hr>        
+    </header>
+
     <h1>Application Form</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="jobs.html">jobs</a></li>
-        </ul>
         <p>Please fill out the form below to apply for the job position.</p>
         <p>All fields are required unless otherwise specified.</p>
 
@@ -134,8 +150,13 @@
             <button type="submit">Submit Application</button>
             <button type="reset">Reset</button>
             <button type="button" onclick="window.location.href='index.html'">Cancel</button>
-
-        </form>
+        </form><hr>
+        <footer id="foot">
+                <!-- Contact email -->
+                <p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
+                <!-- Jira link -->
+                <p>link to Jira: <a hreflang="en" target="_blank" title="To the team's Jira project" href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">https://cmaa8623.atlassian.net/jira/software/projects</a></p>
+        </footer>
 
         <script>
             // Enable the "Other skills" textarea if checkbox is checked
