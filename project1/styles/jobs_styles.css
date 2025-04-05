@@ -5,17 +5,26 @@
     font-weight: bold; 
     text-decoration: underline;
     color: mediumseagreen; 
-    letter-spacing: 1px; 
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
 }
 
 aside {
     text-align: center;
+    padding-right: 2em;
+}
+
+ul {
+    list-style-type: none;
 }
 
 #job_positions {
-    display: flex;
-    flex-direction: column;  /* Arrange the boxes vertically in columns */
-    align-items: center;  /* Center the boxes horizontally */
+    display: flex; /*Enables the flexbox layout*/
+    flex-direction: column;  /*Arrange the boxes vertically in columns*/
+    align-items: center;  /*Center the boxes horizontally*/
 }
 
 #network_admin, #software_dev {
@@ -25,6 +34,7 @@ aside {
     padding: 1em;
     width: 90%;
     box-shadow: 1px 5px 5px green;
+    scroll-margin-top: 90px; /*Prevent title cutoff*/
 }
 
 
