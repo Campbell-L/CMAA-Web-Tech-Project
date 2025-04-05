@@ -1,0 +1,30 @@
+
+#h1_jobs {
+    text-align: center; 
+    font-size: 1.5em;  
+    font-weight: bold; 
+    text-decoration: underline;
+    color: mediumseagreen; 
+    letter-spacing: 1px; 
+}
+
+aside {
+    text-align: center;
+}
+
+#job_positions {
+    display: flex;
+    flex-direction: column;  /* Arrange the boxes vertically in columns */
+    align-items: center;  /* Center the boxes horizontally */
+}
+
+#network_admin, #software_dev {
+    border: 8px double mediumseagreen;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    width: 90%;
+    box-shadow: 1px 5px 5px green;
+}
+
+
