@@ -6,7 +6,7 @@ last modified: 2/04/2025
 description: Styles the website home page; index.html
 */
 
-/* Uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
+/* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
 
 /*
 notes:
@@ -24,7 +24,7 @@ maybe; the various pharagraphs go side-by-side if wide enough
 
 /* Logo */
 #logo {
-    width: 5em;
+    width: 7em;
     max-width: 100%;
 }
 
@@ -38,25 +38,50 @@ header {
 nav {
     list-style-type: none;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
     /* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
     background-image: url('images/temp_nav_background.jpg');
     background-position: top left;
     background-size: contain;
     background-repeat: repeat-x;
+
 }
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
 /* Title */
 nav h1 {
     padding-left: 1em;
-    padding-right: 1em;
 }
+
+#name {
+    max-width: 200px;
+}
+
+#short_name {
+    display: none;
+}
+
+#left_side {
+    display: flex;
+
+}
+
 /* info email Button */
 nav a.email {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     padding: 0.7em;
-    border: 2px, solid, rgb(0, 110, 16);
+    margin-right: 1em;
+    border: 2px solid rgb(0, 110, 16);
+}
+#small_email {
+    display:none;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 /* info email Button on hover */
 nav a.email:hover {
@@ -65,28 +90,103 @@ nav a.email:hover {
 }
 
 /* Menu buttons */
-nav ul {
+nav div ul {
     display: flex;
     align-content: space-around;
+    padding-left: 2em;
 }
 
-nav ul li {
+nav div ul li {
     font-size: large;
     display: inline;
     padding-right: 2em;
 }
 
-nav ul li a {
+nav div ul li a {
     font-size: 1.2em;
     color: #106727;
 }
 
-nav ul li a:hover {
+nav div ul li a:hover {
     color: #bac4bd;
 }
 
+/* Adaptive header and navigation bar */
+@media screen and (max-width: 927px) {
+    #large_email{
+        display: none;
+    }
 
-/* Whole page link styling */
+    #small_email{
+        display: flex;
+    }
+    
+    nav ul li {
+        padding-right: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    #name{
+        display: none;
+    }
+
+    #short_name{
+        display: block;
+        margin-top: 0em;
+        margin-bottom: 0.62em;
+        padding: 0em;
+    }
+
+    #logo {
+        max-width: 5em;
+    }
+
+    #logo_title{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #lefthand {
+        justify-content: space-between;
+        min-width: 91.9%;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    nav ul {
+        max-width: 15em;
+    }
+
+    nav ul li {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+
+    #lefthand {
+        justify-content: space-between;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav ul {
+        max-width: 5em;
+        margin: 0em;
+    }
+
+    nav ul li {
+        padding: 0em;
+    }
+}
+
+/* Whole page anchor styling */
 a{
     text-decoration: none;
     color: rgb(40, 179, 47);
@@ -112,7 +212,7 @@ a:hover{
 
 #values div{
     padding: 0.7em;
-    border: 3px,solid,rgb(90, 122, 48);
+    border: 3px solid rgb(90, 122, 48);
     margin: 1%;
     background-color: #ffffff;
     max-width: 25em;
