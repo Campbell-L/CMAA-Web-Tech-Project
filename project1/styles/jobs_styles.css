@@ -13,7 +13,7 @@ aside {
 }
 
 #job_positions {
-    display: flex; /*Enables the flexbox layout*/
+    display: flex; /* Enables the flexbox layout */
     flex-direction: column;  /* Arrange the boxes vertically in columns */
     align-items: center;  /* Center the boxes horizontally */
 }
