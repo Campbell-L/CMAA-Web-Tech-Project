@@ -3,7 +3,6 @@
 	width: 60%;
 	margin: 0 auto;
 	padding: 0;
-	/* box-shadow: 0rem 0.2rem 0.2rem rgb(150, 150, 150); */
 }
 
 .page-title h2 {
@@ -14,12 +13,8 @@
 }
 
 .page-title {
-	/* background-color: #edf5e9; */
-	/* background-color: #397922; */
-	/* background: linear-gradient(to right, #5dc537, #397922, #5dc537); */
 	background: linear-gradient(to bottom, #329f2c, #227925);
 	color: white;
-	/* color: black; */
 	padding: 1rem;
 	margin: 0;
 }
