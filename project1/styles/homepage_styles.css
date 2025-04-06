@@ -22,16 +22,49 @@ menu link buttons stack after screen gets too small
 maybe; the various pharagraphs go side-by-side if wide enough
 */
 
+/* Imports fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+	font-family: "Figtree";
+	font-weight: 200;
+}
+
 /* Logo */
 #logo {
     width: 7em;
     max-width: 100%;
 }
 
+h1 {
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 900;
+}
+
+h3 {
+	font-weight: 500;
+}
+
 header {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
+	position: sticky;
+	top: 0;
+
+	/* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
+    background-image: url('images/temp_nav_background.jpg');
+    background-position: top left;
+    background-size: contain;
+    background-repeat: repeat-x ;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	max-height: 20%;
+}
+
+body {
+	margin: 0;
 }
 
 /* Navigation bar */
@@ -107,10 +140,13 @@ nav div ul li {
 nav div ul li a {
     font-size: 1.2em;
     color: #106727;
+
+	transition: color 0.1s;
+	transition: font-weight 0.1s;
 }
 
 nav div ul li a:hover {
-    color: #bac4bd;
+    color: rgb(40, 179, 47);;
 }
 
 /* Adaptive header and navigation bar */
@@ -197,6 +233,12 @@ a {
 a:hover {
     text-decoration: none;
     color: rgb(41, 101, 44);
+}
+
+/* Title bar line */
+hr {
+	color: #36761f;
+	border-style: solid;
 }
 
 

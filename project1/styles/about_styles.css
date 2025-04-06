@@ -1,0 +1,186 @@
+#about-article {
+	background-color: white;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.page-title h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin: 0;
+	margin-top: 1.5rem;
+}
+
+.page-title {
+	background: linear-gradient(to bottom, #329f2c, #227925);
+	color: white;
+	padding: 1rem;
+	margin: 0;
+}
+
+.page-title p {
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+	margin: 0;
+	margin-bottom: 1.5rem;
+}
+
+.body-section h3 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.body-section:nth-of-type(n+2) h3 {
+	margin-top: 7rem;
+}
+
+
+.panel-holder {
+	background-color: rgb(0, 110, 16);
+	display: flex;
+	justify-content: space-between;
+	gap: 0.1rem;
+}
+
+.panel {
+	background-color: #ffffff;
+	padding: auto;
+	display: block;
+	width: 100%;
+}
+
+.panel dl dt {
+	text-align: center;
+}
+
+.group-info-section dl dt {
+	font-style: italic;
+	color: gray;
+	font-weight: 100;
+}
+
+.panel dl dd {
+	text-align: center;
+	font-weight: 600;
+	margin: 0;
+} 
+
+.group-info-section dl dd{
+	font-size: 50px;
+}
+
+
+
+.contribution-section dl dt{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.contribution-section dl dd ul li{
+	list-style: circle;
+	margin: 0;
+	text-align: left;
+}
+
+/* ID and Interests section */
+#individual-info-list {
+	display: flex;
+	justify-content: center;
+}
+
+/* Table styles */
+table {
+	width: 50%;
+	border-collapse: collapse;
+}
+
+table caption {
+	margin-bottom: 0.4rem;
+	font-style: italic;
+}
+
+th, td {
+	border: solid rgb(7, 67, 0) 1px;
+	padding: 0.4rem;
+}
+
+.name-cell {
+	text-align: center;
+	width: 10%;
+}
+
+tr td:nth-of-type(2) {
+	width: 20%;
+}
+
+th, .name-cell {
+	font-weight: 500;
+}
+
+th {
+	color: white;
+}
+
+thead {
+	background-color: #227925;
+}
+
+/* nth-child selector made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
+table tbody tr:nth-child(2n+1):nth-child(-n+3), table tbody tr:nth-child(2n+7):nth-child(-n+9){
+	background-color: #e2e2e2;
+}
+
+table tbody tr:nth-child(2), table tbody tr:nth-child(8){
+	background-color: #c4c4c4;
+}
+
+table tbody tr:nth-child(2n+4):nth-child(-n+6), table tbody tr:nth-child(2n+10):nth-child(-n+12){
+	background-color: rgb(207, 255, 209);
+}
+
+table tbody tr:nth-child(5), table tbody tr:nth-child(11){
+	background-color: rgb(155, 220, 158);
+}
+
+
+/* Responsiveness for panels */
+@media screen and (min-width: 1200px) {
+
+	/* Change width of cells in "Group Info" so the class time can be on one line */
+	.group-info-section:first-of-type, .group-info-section:last-of-type {
+		width: 25%;
+	}
+	
+	.group-info-section:nth-of-type(2) {
+		width: 50%;
+	}
+	
+}
+
+
+@media screen and (max-width: 1200px) {
+    .panel-holder {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.1rem;
+	}
+
+	.panel {
+		background-color: #ffffff;
+		padding: auto;
+		width: 100%;
+	}
+}
+
+/* Animation for link hover */
+a {
+	transition: all 0.2s;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: 400;
+}
