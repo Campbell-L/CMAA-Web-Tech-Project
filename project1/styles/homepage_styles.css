@@ -29,9 +29,9 @@ maybe; the various pharagraphs go side-by-side if wide enough
 }
 
 header {
-	position: sticky;
-	top: 0;
-	background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
 }
 
 /* Navigation bar */
@@ -78,11 +78,13 @@ nav a.email {
     margin-right: 1em;
     border: 2px solid rgb(0, 110, 16);
 }
+
 #small_email {
-    display:none;
+    display: none;
     padding-left: 0.8em;
     padding-right: 0.8em;
 }
+
 /* info email Button on hover */
 nav a.email:hover {
     color: rgb(255, 255, 255);
@@ -113,14 +115,14 @@ nav div ul li a:hover {
 
 /* Adaptive header and navigation bar */
 @media screen and (max-width: 927px) {
-    #large_email{
+    #large_email {
         display: none;
     }
 
-    #small_email{
+    #small_email {
         display: flex;
     }
-    
+
     nav ul li {
         padding-right: 1em;
     }
@@ -132,11 +134,11 @@ nav div ul li a:hover {
 }
 
 @media screen and (max-width: 805px) {
-    #name{
+    #name {
         display: none;
     }
 
-    #short_name{
+    #short_name {
         display: block;
         margin-top: 0em;
         margin-bottom: 0.62em;
@@ -147,7 +149,7 @@ nav div ul li a:hover {
         max-width: 5em;
     }
 
-    #logo_title{
+    #logo_title {
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -187,12 +189,12 @@ nav div ul li a:hover {
 }
 
 /* Whole page anchor styling */
-a{
+a {
     text-decoration: none;
     color: rgb(40, 179, 47);
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: rgb(41, 101, 44);
 }
@@ -210,7 +212,7 @@ a:hover{
     justify-content: space-around;
 }
 
-#values div{
+#values div {
     padding: 0.7em;
     border: 3px solid rgb(90, 122, 48);
     margin: 1%;
@@ -218,30 +220,30 @@ a:hover{
     max-width: 25em;
 }
 
-#values div h4{
+#values div h4 {
     margin: 0;
-    color:#000000;
+    color: #000000;
 }
 
-#values div p{
+#values div p {
     margin: 0;
     color: #000000;
 }
 
 #foot {
     background-color: #244e22;
-    padding:2em;
-    color:#ffffff;
+    padding: 2em;
+    color: #ffffff;
 }
 
 /* Footer link stlying */
 
-#foot a{
-    color:#95fc92;
+#foot a {
+    color: #95fc92;
 }
 
-#foot a:hover{
-    color:#778276;
+#foot a:hover {
+    color: #778276;
 }
 
 
@@ -257,7 +259,7 @@ section div {
 }
 
 #postcode {
-    width: 10%;
+    width: 15%;
 }
 
 #phone {
@@ -278,7 +280,7 @@ input[type="text"] {
 }
 
 legend {
-    color: black ;
+    color: black;
     text-align: left;
     font-size: 1em;
     font-weight: bold;
@@ -293,10 +295,49 @@ fieldset {
 }
 
 #job_ref {
-    width: 20%;
+    width: 30%;
 }
+
 #AppForm_h1 {
     text-align: left;
     font-size: 2em;
     color: black;
+}
+
+#other_skills_text {
+    display: none;
+}
+
+#other_skills:checked~#other_skills_text {
+    display: block;
+    margin-top: 10px;
+}
+
+#button-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    display: inline-block;
+    margin: 1em;
+}
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Focus effect */
+button:focus{
+    outline: 3px solid #fff;
+    outline-offset: 2px;
 }
