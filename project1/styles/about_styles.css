@@ -1,14 +1,66 @@
-#group-photo {
-	float: right;
-	background-color: antiquewhite;
-	border: 0.2rem solid black;
-	margin-right: 20%;
-}
-
-#group-photo img{
-	width: 20rem;
-}
-
 #about-article {
-	float: left;
+	background-color: white;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+	/* box-shadow: 0rem 0.2rem 0.2rem rgb(150, 150, 150); */
 }
+
+.page-title h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin: 0;
+	margin-top: 1.5rem;
+}
+
+.page-title {
+	/* background-color: #edf5e9; */
+	/* background-color: #397922; */
+	/* background: linear-gradient(to right, #5dc537, #397922, #5dc537); */
+	background: linear-gradient(to bottom, #4b9f2c, #397922);
+	color: white;
+	padding: 1rem;
+	margin: 0;
+}
+
+.page-title p {
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+	margin: 0;
+	margin-bottom: 1.5rem;
+}
+
+.body-section h3 {
+	text-align: center;
+}
+
+
+#group-info-list {
+	background-color: green;
+	display: flex;
+	overflow: auto;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.group-info-section {
+	background-color: #ffffff;
+	padding: auto;
+	display: block;
+	width: 33%;
+}
+
+.group-info-section dl dt {
+	color: gray;
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.group-info-section dl dd {
+	text-align: center;
+	font-weight: 500;
+	font-size: 50px;
+	margin: 0;
+} 
