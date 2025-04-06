@@ -24,9 +24,11 @@ maybe; the various pharagraphs go side-by-side if wide enough
 
 /* Imports fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-	font-family: "Rubik";
+	font-family: "Figtree";
+	font-weight: 200;
 }
 
 /* Logo */
@@ -35,9 +37,17 @@ maybe; the various pharagraphs go side-by-side if wide enough
     max-width: 100%;
 }
 
-/* header * {
-	font-family: montserrat;
-} */
+h1 {
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 900;
+}
+
+h3 {
+	font-weight: 500;
+}
 
 header {
 	position: sticky;
@@ -135,7 +145,7 @@ nav div ul li a {
 }
 
 nav div ul li a:hover {
-    color: #bac4bd;
+    color: rgb(40, 179, 47);;
 }
 
 /* Adaptive header and navigation bar */

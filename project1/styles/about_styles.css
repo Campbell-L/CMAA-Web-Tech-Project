@@ -17,8 +17,9 @@
 	/* background-color: #edf5e9; */
 	/* background-color: #397922; */
 	/* background: linear-gradient(to right, #5dc537, #397922, #5dc537); */
-	background: linear-gradient(to bottom, #4b9f2c, #397922);
+	background: linear-gradient(to bottom, #329f2c, #227925);
 	color: white;
+	/* color: black; */
 	padding: 1rem;
 	margin: 0;
 }
@@ -36,31 +37,89 @@
 }
 
 
-#group-info-list {
-	background-color: green;
+.panel-holder {
+	background-color: rgb(0, 110, 16);
 	display: flex;
-	overflow: auto;
-	flex-direction: row;
 	justify-content: space-between;
+	gap: 0.1rem;
 }
 
-.group-info-section {
+.panel {
 	background-color: #ffffff;
 	padding: auto;
 	display: block;
-	width: 33%;
+	width: 100%;
+}
+
+.panel dl dt {
+	text-align: center;
 }
 
 .group-info-section dl dt {
-	color: gray;
-	text-align: center;
 	font-style: italic;
+	color: gray;
 	font-weight: 100;
 }
 
-.group-info-section dl dd {
+.panel dl dd {
 	text-align: center;
-	font-weight: 500;
-	font-size: 50px;
+	font-weight: 600;
 	margin: 0;
 } 
+
+.group-info-section dl dd{
+	font-size: 50px;
+}
+
+
+
+.contribution-section dl dt{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.contribution-section dl dd ul li{
+	list-style: circle;
+	margin: 0;
+	text-align: left;
+}
+
+
+/* Responsiveness for panels */
+@media screen and (min-width: 1200px) {
+
+	/* Change width of cells in "Group Info" so the class time can be on one line */
+	.group-info-section:first-of-type, .group-info-section:last-of-type {
+		width: 25%;
+	}
+	
+	.group-info-section:nth-of-type(2) {
+		width: 50%;
+	}
+	
+}
+
+
+@media screen and (max-width: 1200px) {
+    .panel-holder {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.1rem;
+	}
+
+	.panel {
+		background-color: #ffffff;
+		padding: auto;
+		width: 100%;
+	}
+}
+
+/* Animation for link hover */
+a {
+	transition: all 0.2s;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: 400;
+}
