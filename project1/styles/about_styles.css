@@ -1,6 +1,5 @@
 #about-article {
 	background-color: white;
-	width: 60%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -72,8 +71,6 @@
 	font-size: 50px;
 }
 
-
-
 .contribution-section dl dt{
 	font-size: 20px;
 	font-weight: 500;
@@ -83,6 +80,26 @@
 	list-style: circle;
 	margin: 0;
 	text-align: left;
+}
+
+/* Student ID Aside */
+#student-ids {
+	background-color: #dfdfdf;
+	border: #227925 solid 2px;
+	border-radius: 2px;
+}
+
+#student-ids h3 {
+	text-align: center;
+	font-weight: 800;
+}
+
+#student-ids dt{
+	font-weight: 500;
+}
+
+#student-ids dd{
+	font-style: italic;
 }
 
 /* ID and Interests section */
@@ -145,8 +162,10 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 	background-color: rgb(155, 220, 158);
 }
 
-
-/* Responsiveness for panels */
+/* Responsiveness for page layout */
+/* LARGE SCREEN */
+/* When the screen is >1200px wide */
+/* 		Allow more room for the class time in the central cell of group info */
 @media screen and (min-width: 1200px) {
 
 	/* Change width of cells in "Group Info" so the class time can be on one line */
@@ -157,11 +176,55 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 	.group-info-section:nth-of-type(2) {
 		width: 50%;
 	}
+}
+
+/* When the screen is >1350px wide */
+/* 		Student ID aside should be floated to the right */
+@media screen and (min-width: 1350px) {
+	/* Default Student ID Aside Formatting for large screen */
+	#student-ids {
+		float: right;
+		margin: 0 2rem;
+		padding: 0 4%;
+	}
+
+	#student-ids dd{
+		padding-bottom: 1rem;
+	}
+
+	#about-article {
+		width: 60%;
+	}
 	
 }
 
+/* When the screen is <1350px wide */
+/* 		Student ID aside should become vertically aligned to make more room for the other content  */
+@media screen and (max-width:1350px) {
+	/* Student ID Aside Formatting for smaller screen */
+	#student-ids {
+		width: 60%;
+		margin: auto;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
 
-@media screen and (max-width: 1200px) {
+	#student-ids dd{
+		padding-bottom: 1rem;
+		margin: 0;
+	}
+
+	#about-article {
+		width: 90%;
+	}
+
+}
+
+/* SMALL SCREEN */
+/* When the screen is <900px wide */
+/* 		Horizontal grids should become vertical */
+/* 		Table expands to fill more space and be more readable */
+@media screen and (max-width: 900px) {
     .panel-holder {
 		flex-direction: column;
 		align-items: center;
@@ -173,7 +236,13 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 		padding: auto;
 		width: 100%;
 	}
+
+	table {
+		width: 90%;
+	}
+	
 }
+
 
 /* Animation for link hover */
 a {
@@ -182,5 +251,4 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	font-weight: 400;
 }
