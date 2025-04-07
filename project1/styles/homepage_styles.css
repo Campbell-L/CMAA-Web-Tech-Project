@@ -402,6 +402,8 @@ fieldset {
     margin: 1em;
     padding: 1em;
     padding-bottom: 1.4em;
+    position: sticky;
+    top: 140px; 
 }
 
 #aside_header {
@@ -413,6 +415,8 @@ fieldset {
    color: mediumseagreen;
 }
 
+
+/*Job listings styling*/
 #job_positions {
     display: flex; /*Enables the flexbox layout*/
     flex-direction: column;  /*Arrange the boxes vertically in columns*/
