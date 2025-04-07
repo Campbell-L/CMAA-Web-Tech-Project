@@ -1,25 +1,9 @@
 /*
 filename: Homepage Styles
-author: Asha Burdack
+authors: Asha Burdack
 created: 2/04/2025
-last modified: 2/04/2025
+last modified: 6/04/2025
 description: Styles the website home page; index.html
-*/
-
-/* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
-
-/*
-notes:
-things to add
-link to home page on logo click
-better font
-increase overall text size
-add a "company graphic"? is this a logo, or an image?
-
-adaptive css to screen size change:
-company values stack after screen gets too small
-menu link buttons stack after screen gets too small
-maybe; the various pharagraphs go side-by-side if wide enough
 */
 
 /* Imports fonts from Google Fonts */
@@ -36,6 +20,8 @@ maybe; the various pharagraphs go side-by-side if wide enough
     max-width: 100%;
 }
 
+/* All pages general styling */
+/* Heading size */
 h1 {
 	font-weight: 700;
 }
@@ -48,16 +34,16 @@ h3 {
 	font-weight: 500;
 }
 
+
 header {
 	position: sticky;
 	top: 0;
-
-	/* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
+    /* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
     background-image: url('images/temp_nav_background.jpg');
     background-position: top left;
     background-size: contain;
-    background-repeat: repeat-x ;
-	width: 100%;
+    background-repeat: repeat-x;
+    width: 100%;
 	padding: 0;
 	margin: 0;
 	max-height: 20%;
@@ -67,43 +53,55 @@ body {
 	margin: 0;
 }
 
+/* Horizontal bar line */
+hr {
+	color: #36761f;
+	border-style: solid;
+}
+
+/* Anchor styling */
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(30, 173, 2);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(30, 68, 23);
+}
+
+/* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
 /* Navigation bar */
 nav {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    /* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
-    background-image: url('images/temp_nav_background.jpg');
-    background-position: top left;
-    background-size: contain;
-    background-repeat: repeat-x;
-
 }
-
 nav div {
     display: flex;
     align-items: center;
 }
 
-/* Title */
+/* Navigation title */
 nav h1 {
     padding-left: 1em;
 }
-
 #name {
     max-width: 200px;
 }
-
 #short_name {
     display: none;
 }
-
 #left_side {
     display: flex;
 
 }
 
-/* info email Button */
+/* Navigation email button */
+nav a {
+    font-weight: 100;
+}
 nav a.email {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
@@ -111,32 +109,29 @@ nav a.email {
     margin-right: 1em;
     border: 2px solid rgb(0, 110, 16);
 }
-
 #small_email {
     display: none;
     padding-left: 0.8em;
     padding-right: 0.8em;
 }
 
-/* info email Button on hover */
+/* Navigation email button on hover */
 nav a.email:hover {
     color: rgb(255, 255, 255);
     background-color: #135d11;
 }
 
-/* Menu buttons */
+/* Navigation menu buttons */
 nav div ul {
     display: flex;
     align-content: space-around;
     padding-left: 2em;
 }
-
 nav div ul li {
     font-size: large;
     display: inline;
     padding-right: 2em;
 }
-
 nav div ul li a {
     font-size: 1.2em;
     color: #106727;
@@ -144,7 +139,6 @@ nav div ul li a {
 	transition: color 0.1s;
 	transition: font-weight 0.1s;
 }
-
 nav div ul li a:hover {
     color: rgb(40, 179, 47);;
 }
@@ -168,8 +162,7 @@ nav div ul li a:hover {
         flex-wrap: wrap;
     }
 }
-
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 809px) {
     #name {
         display: none;
     }
@@ -177,7 +170,7 @@ nav div ul li a:hover {
     #short_name {
         display: block;
         margin-top: 0em;
-        margin-bottom: 0.62em;
+        margin-bottom: 0.76em;
         padding: 0em;
     }
 
@@ -196,7 +189,6 @@ nav div ul li a:hover {
         min-width: 91.9%;
     }
 }
-
 @media screen and (max-width: 549px) {
     nav ul {
         max-width: 15em;
@@ -212,7 +204,6 @@ nav div ul li a:hover {
         min-width: auto;
     }
 }
-
 @media screen and (max-width: 400px) {
     nav ul {
         max-width: 5em;
@@ -224,70 +215,109 @@ nav div ul li a:hover {
     }
 }
 
-/* Whole page anchor styling */
-a {
-    text-decoration: none;
-    color: rgb(40, 179, 47);
+/* Home page content styling */
+#home_page {
+    /* Image from: https://www.freepik.com/free-vector/watercolor-animal-print-pattern_12498436.htm#fromView=keyword&page=1&position=15&uuid=408c86f3-ab22-482e-b44b-ca901bb51661&query=Green+Seamless+Pattern */
+    background-image: url('images/homepage_background.jpg');
+    background-position: top left;
+    background-size: contain;
+}
+#home_page_title {
+    margin: 2%;
+    font-size: 3em;
+    text-align: center;
+}
+#slogan {
+    text-align: center;
+    margin:1%;
+}
+#main_home {
+    background-color: #fff;
+    margin: 3%;
+    padding: 1em;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+section.homepage {
+    border: 3px solid black;
 }
 
-a:hover {
-    text-decoration: none;
-    color: rgb(41, 101, 44);
+/* homepage company values stlying and spacing */
+h4.value_heading {
+    font-weight: 500;
 }
-
-/* Title bar line */
-hr {
-	color: #36761f;
-	border-style: solid;
-}
-
-
-/* Join us styling */
-#benefits {
-    max-width: 35em;
-}
-
-
-/* Company values stlying and spacing */
-#values {
+#value_boxes {
     display: flex;
     justify-content: space-around;
 }
-
-#values div {
+#value_boxes div {
     padding: 0.7em;
     border: 3px solid rgb(90, 122, 48);
     margin: 1%;
     background-color: #ffffff;
     max-width: 25em;
 }
-
-#values div h4 {
+#value_boxes div h4 {
     margin: 0;
     color: #000000;
 }
-
-#values div p {
+#value_boxes div p {
     margin: 0;
     color: #000000;
 }
+#values, #benefits, #who_are_we, #introduction {
+    padding: 1em;
+}
 
+/* Homepage footer */
 #foot {
-    background-color: #244e22;
+    background-color: #224e2c;
     padding: 2em;
     color: #ffffff;
 }
 
 /* Footer link stlying */
-
 #foot a {
-    color: #95fc92;
+    color: #aef6ab;
 }
 
 #foot a:hover {
     color: #778276;
 }
 
+/* Adaptive home page content */
+@media screen and (max-width: 600px) {
+   #value_boxes {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+   } 
+}
+@media screen and (min-width: 870px) {
+    #main_home {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    #lefthand_home {
+        max-width: 48%;
+        flex-direction: column;
+        border-right: 2px solid green;
+    }
+    #introduction{
+        max-width: 100%;
+        max-height: 10em;
+    }
+    #who_are_we{
+        max-width: 100%;
+    }
+    #benefits{
+        max-width: 47%;
+    }
+    #values {
+        align-self: flex-end;
+    }
+}
 
 /* styling for apply.html page */
 
