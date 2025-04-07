@@ -15,20 +15,28 @@
     <header id="head">
         <!-- Navigation bar -->
         <nav>
-            <!-- Company logo -->
-            <img id="logo" alt="ATCM logo, an image of-" title="ATCM logo" src="images/temp_logo.png">
-            <!-- Company Name -->
-            <h1 id="name">Austech Computing and Manufacturing</h1>
+            <div id="lefthand">
+                <div id="logo_title">
+                    <!-- Company logo -->
+                    <img id="logo" alt="ATCM logo, an image of-" title="ATCM logo" src="images/temp_logo.png">
+                    <h1 id="short_name">ATCM</h1>
+                </div>
+                <!-- Company Name -->
+                <h1 id="name">Austech Computing and Manufacturing</h1>
+                <!-- Menu links -->
+                <ul>
+                    <li><a title="Home Page" href="index.html">Home</a></li>
+                    <li><a title="Jobs Desription Page" href="jobs.html">Jobs</a></li>
+                    <li><a title="Appliations Page" href="apply.html">Apply</a></li>
+                    <li><a title="About Page" href="about.html">About</a></li>
+                </ul>
+            </div>
 
-            <!-- Menu links -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-
-            <a class="email" href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
+            <div id="righthand">
+                <!-- Email link -->
+                <a class="email" id="small_email" href="mailto:info@austechcm.com.au">&#128386;</a>
+                <a class="email" id="large_email" href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
+            </div>
         </nav>
         <hr>
     </header>
@@ -43,8 +51,11 @@
                     <legend>Job Details</legend>
                     <!-- Job Reference Number -->
                     <label for="job_ref">Job Reference Number:</label>
-                    <input type="text" id="job_ref" name="job_ref" pattern="[A-Za-z0-9]{5}" maxlength="5" required
-                        tooltip="Max 5 alphanumeric characters">
+                    <select id="job_ref" name="job_ref" required>
+                        <option value="Please Select">Please Select</option>
+                        <option value="ATCM1">ATCM1</option>
+                        <option value="ATCM2">ATCM2</option>
+                    </select>
                     <br>
                 </fieldset>
                 <fieldset>
@@ -53,6 +64,7 @@
                     <label for="first_name">First Name:</label>
                     <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]{1,20}" maxlength="20"
                         required tooltip="Max 20 alphabetic characters">
+                    <br><br>
 
                     <!-- Last Name -->
                     <label for="last_name">Last Name:</label>
@@ -67,15 +79,15 @@
                     <br><br>
 
                     <!-- Gender -->
-                <fieldset>
-                    <legend>Gender</legend>
+                    <fieldset>
+                        <legend>Gender</legend>
                         <label for="male">Male</label>
                         <input type="radio" id="male" name="gender" value="Male" required>
                         <label for="female">Female</label>
                         <input type="radio" id="female" name="gender" value="Female" required>
                         <label for="other">Other</label>
                         <input type="radio" id="other" name="gender" value="Other" required>
-                </fieldset>
+                    </fieldset>
                     <br>
 
                     <!-- Phone Number -->
@@ -129,30 +141,49 @@
                 <fieldset>
                     <legend>Skills:</legend>
                     <label for="skill1">
-                        <input type="checkbox" id="skill1" name="skills" value="1"> 1
+                        <input type="checkbox" id="skill1" name="skills" value="Excellent problem-solving skills">
+                        Excellent problem-solving skills
                     </label>
                     <br>
                     <label for="skill2">
-                        <input type="checkbox" id="skill2" name="skills" value="2"> 2
+                        <input type="checkbox" id="skill2" name="skills"
+                            value="Ability to manage various projects and tasks simultaneously"> Ability to manage
+                        various projects and tasks simultaneously
                     </label>
                     <br>
                     <label for="skill3">
-                        <input type="checkbox" id="skill3" name="skills" value="3"> 3
+                        <input type="checkbox" id="skill3" name="skills"
+                            value="Strong communication skills, including verbal and written"> Strong communication
+                        skills, including verbal and written
                     </label>
                     <br>
-                    <label for="other_skills">
-                        <input type="checkbox" id="other_skills" name="skills" value="Other"> Other skills...
+                    <label for="skill4">
+                        <input type="checkbox" id="skill4" name="skills"
+                            value="Work proficientlly in a team enviroment"> Work proficientlly in a team enviroment
                     </label>
                     <br>
+                    <label for="skill5">
+                        <input type="checkbox" id="skill5" name="skills" value="Attention to detail"> Attention to detail
+                    </label>
+                    <br>
+                    <label for="skill6">
+                        <input type="checkbox" id="skill6" name="skills" value="Professional organisational skills">
+                        Professional organisational skills
+                    </label>
+                    <br>
+                    <input type="checkbox" id="other_skills" name="skills" value="Other">
+                    <label for="other_skills">Other skills...</label>
+
                     <textarea id="other_skills_text" name="other_skills_text" rows="4" cols="50"
-                        placeholder="Please describe your other skills here if applicable." disabled></textarea>
+                        placeholder="Please describe your other skills here if applicable."></textarea>
+
                 </fieldset>
                 <br>
-
-                <!-- Submit Button -->
+            <div id="button-container">
                 <button type="submit">Submit Application</button>
                 <button type="reset">Reset</button>
                 <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+            </div>
             </form>
         </div>
 
@@ -166,18 +197,6 @@
                 href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">https://cmaa8623.atlassian.net/jira/software/projects</a>
         </p>
     </footer>
-
-    <script>
-        // Enable the "Other skills" textarea if checkbox is checked
-        document.getElementById('other_skills').addEventListener('change', function () {
-            var otherSkillsTextarea = document.getElementById('other_skills_text');
-            if (this.checked) {
-                otherSkillsTextarea.disabled = false;
-            } else {
-                otherSkillsTextarea.disabled = true;
-            }
-        });
-    </script>
 
 </body>
 
