@@ -393,7 +393,7 @@ fieldset {
 }
 
 /*Aside section styles*/
-aside {
+#jobs_aside {
     text-align: left;
     width: 25%;
     float: right;
