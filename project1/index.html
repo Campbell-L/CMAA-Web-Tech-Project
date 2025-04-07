@@ -15,14 +15,14 @@
 <!-- https://imsx.com.au/ -->
 <!-- https://www.vic.gov.au/school-jobs -->
 
-<body>
+<body id="home_page">
     <header id="head">
         <!-- Navigation bar -->
         <nav>
             <div id="lefthand">
                 <div id="logo_title">
                     <!-- Company logo -->
-                    <img id="logo" alt="ATCM logo, an image of-" title="ATCM logo" src="images/temp_logo.png">
+                    <img id="logo" alt="ATCM logo" title="ATCM" src="images/temp_logo.png">
                     <h1 id="short_name">ATCM</h1>
                 </div>
                 <!-- Company Name -->
@@ -30,35 +30,40 @@
                 <!-- Menu links -->
                 <ul>
                     <li><a title="Home Page" href="index.html">Home</a></li>
-                    <li><a title="Jobs Desription Page" href="jobs.html">Jobs</a></li>                
-                    <li><a title="Appliations Page" href="apply.html">Apply</a></li>
+                    <li><a title="Job Desription Page" href="jobs.html">Jobs</a></li>                
+                    <li><a title="Appliation Page" href="apply.html">Apply</a></li>
                     <li><a title="About Page" href="about.html">About</a></li>
                 </ul>
             </div>
             
             <div id="righthand">
                 <!-- Email link -->
-                <a class="email" id="small_email" href="mailto:info@austechcm.com.au">&#128386;</a>
-                <a class="email" id="large_email" href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
+                <a class="email" id="small_email" title="Email for further infomation" href="mailto:info@austechcm.com.au">&#128386;</a>
+                <a class="email" id="large_email" title="Email for further infomation" href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
             </div>
         </nav>
         <hr>        
     </header>
 
-    <div id="main_content">
-        <!-- Introduction -->
-        <br>
-        <h3>The forefront of technological inovation, finding the solutions of the future.</h3>
-        <br>
+    <main id="main_home">
+        <div id="lefthand_home">
+            <!-- Introduction -->
+            <section id="introduction">
+                <h1 id="home_page_title">Austech CM</h1>
+                <br>
+                <h3 id="slogan">The forefront of technological inovation, finding the solutions of the future.</h3>
+                <br>
+            </section>
 
-        <!-- What does this company do -->
-        <div id="who_are_we">
-            <h2>Who are we?</h2>
-            <p>Austech is an industry leading information technology service provider and hardware developer. We provide IT services for other companies or independant bodies, including contract work, reviews, and labour outsourcing. Austech is also a certified hardware manufacturer, with decades of experience, and ongoing research into nanotechonlogy.</p>
+            <!-- What does this company do -->
+            <section id="who_are_we">
+                <h2>Who are we?</h2>
+                <p>Austech is an industry leading information technology service provider and hardware developer. We provide IT services for other companies or independant bodies, including contract work, reviews, and labour outsourcing. Austech is also a certified hardware manufacturer, with decades of experience, and ongoing research into nanotechonlogy.</p>
+            </section>
         </div>
         
         <!-- Company Benefits -->
-        <div id="benefits">
+        <section id="benefits">
             <h2>Why Join Us?</h2>
             <p>Not only do you get to be part of one of the world's best IT service providers and researchers, but we care about your health, wellbeing, and growth. Thats why working at Austech means:</p>
             <ul>
@@ -66,7 +71,7 @@
                 <li>Fantastic rates on paid leave</li>
                 <li>Modern, well kept, and safe workplaces</li>
                 <li>Work-at-home flexibility</li>
-                <li>Friendly and inclusive working enviroment (see our <a href="#values">values</a>)</li>
+                <li>Friendly and inclusive working enviroment (see our <a title="Company values" href="#values">values</a>)</li>
                 <li>World class training programs</li>
                 <li>Public transport assistance</li>
                 <li>Free childcare services</li>
@@ -76,36 +81,39 @@
 
             <!-- Link to job listing page -->
             <p>Sounds good? Check out our <a target="self" title="To Job listing" href="jobs.html">job listing page</a></p>
-        </div>
+        </section>
         <br>
 
         <!-- Company values -->
-        <h2>Our Company Values</h2>
-        <div id="values">
-            <div>
-                <h4>Respect</h4>
-                <p>Respect is our most important core values, it is what allows us to collaborate, communicate and open our minds to new ideas. We belive all workplaces should be safe and inclusive places.</p>
-            </div>
+        <section id="values">
+            <h2>Our Company Values</h2>
+            <section id="value_boxes">
+                <div>
+                    <h4 class="value_heading">Respect</h4>
+                    <p>Respect is our most important core values, it is what allows us to collaborate, communicate and open our minds to new ideas. We belive all workplaces should be safe and inclusive places.</p>
+                </div>
 
-            <div>
-                <h4>Inovation</h4>
-                <p>There are always better, more efficient and effective solutions, in a world that is constantly evolving we embrace change and radical thinking.</p>
-            </div>
+                <div>
+                    <h4 class="value_heading">Inovation</h4>
+                    <p>There are always better, more efficient and effective solutions, in a world that is constantly evolving we embrace change and radical thinking.</p>
+                </div>
 
-            <div>
-                <h4>Learning and Curiosity</h4>
-                <p>We belive that our employees should always have the opportuities to further their skills, and diversify their knowledge. Here at Austech we allow every employee the room for growth.</p>
-            </div>
-        </div>
+                <div>
+                    <h4 class="value_heading">Learning and Curiosity</h4>
+                    <p>We belive that our employees should always have the opportuities to further their skills, and diversify their knowledge. Here at Austech we allow every employee the room for growth.</p>
+                </div>
+            </section>
+        </section>
         <br>
-        <hr>
-    </div>
+    </main>
 
     <footer id="foot">
         <!-- Contact email -->
-        <p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
+        <p>Contact us: <a title="Get in contact" class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
         <!-- Jira link -->
-        <p>link to Jira: <a hreflang="en" target="_blank" title="To the team's Jira project" href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">https://cmaa8623.atlassian.net/jira/software/projects</a></p>
+        <p>link to jira: <a hreflang="en" target="_blank" title="To the team's Jira project" href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary</a></p>
+        <!-- GitHub link -->
+        <p>link to GitHub: <a hreflang="en" target="_blank" title="To the team's GitHub repository" href="https://github.com/Campbell-L/CMAA-Web-Tech-Project">https://github.com/Campbell-L/CMAA-Web-Tech-Project</a></p>
     </footer>
 </body>
 </html>
