@@ -2,6 +2,7 @@
 	background-color: white;
 	margin: 0 auto;
 	padding: 0;
+	padding-bottom: 2rem;
 }
 
 .page-title h2 {
@@ -110,7 +111,7 @@
 
 /* Table styles */
 table {
-	width: 50%;
+	width: 90%;
 	border-collapse: collapse;
 }
 
@@ -120,8 +121,9 @@ table caption {
 }
 
 th, td {
-	border: solid rgb(7, 67, 0) 1px;
+	border: solid #074300 1px;
 	padding: 0.4rem;
+	transition: background-color 0.2s;
 }
 
 .name-cell {
@@ -131,6 +133,10 @@ th, td {
 
 tr td:nth-of-type(2) {
 	width: 20%;
+}
+
+td:hover {
+	background-color: #ecffeb;
 }
 
 th, .name-cell {
@@ -145,7 +151,7 @@ thead {
 	background-color: #227925;
 }
 
-/* nth-child selector made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
+/* nth-child selectors made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
 table tbody tr:nth-child(2n+1):nth-child(-n+3), table tbody tr:nth-child(2n+7):nth-child(-n+9){
 	background-color: #e2e2e2;
 }
@@ -161,6 +167,21 @@ table tbody tr:nth-child(2n+4):nth-child(-n+6), table tbody tr:nth-child(2n+10):
 table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 	background-color: rgb(155, 220, 158);
 }
+
+/* Group Image Styling */
+#group-photo {
+	float: right;
+	display: flex;
+	justify-content: center;
+}
+
+#group-photo img{
+	max-width: 70%;
+	min-width: 20%;
+	border: #227925 inset 0.7rem;
+	border-radius: 2%;
+}
+
 
 /* Responsiveness for page layout */
 /* LARGE SCREEN */
@@ -218,6 +239,7 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 		width: 90%;
 	}
 
+
 }
 
 /* SMALL SCREEN */
@@ -237,14 +259,14 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 		width: 100%;
 	}
 
-	table {
-		width: 90%;
+	#group-photo {
+		float: none;
 	}
 	
 }
 
 
-/* Animation for link hover */
+Animation for link hover
 a {
 	transition: all 0.2s;
 }
