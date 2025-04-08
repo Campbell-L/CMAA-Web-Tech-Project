@@ -137,10 +137,9 @@ nav div ul li a {
     color: #ffffff;
 
 	transition: color 0.1s;
-	transition: font-weight 0.1s;
 }
 nav div ul li a:hover {
-    color: rgb(79, 104, 80);;
+    color: rgb(79, 104, 80);
 }
 
 /* Adaptive header and navigation bar */
