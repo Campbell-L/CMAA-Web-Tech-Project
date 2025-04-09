@@ -381,13 +381,16 @@ fieldset {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;  
     font-weight: bold; 
-    text-decoration: underline;
-    color: mediumseagreen; 
+    color: green; 
 }
 
 /* Jobs quick access links styles */
+.jobs_link {
+    color: green
+}
+
 .jobs_link:hover {
-    color: green;
+    color: mediumseagreen;
     text-decoration: underline;
 }
 
@@ -410,7 +413,7 @@ fieldset {
 }
 
 #aside_ol {
-   color: mediumseagreen;
+   color: green;
 }
 
 
