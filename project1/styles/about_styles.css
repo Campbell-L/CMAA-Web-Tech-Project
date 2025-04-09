@@ -1,8 +1,8 @@
 #about-article {
 	background-color: white;
-	width: 60%;
 	margin: 0 auto;
 	padding: 0;
+	padding-bottom: 2rem;
 }
 
 .page-title h2 {
@@ -72,8 +72,6 @@
 	font-size: 50px;
 }
 
-
-
 .contribution-section dl dt{
 	font-size: 20px;
 	font-weight: 500;
@@ -85,6 +83,26 @@
 	text-align: left;
 }
 
+/* Student ID Aside */
+#student-ids {
+	background-color: #dfdfdf;
+	border: #227925 solid 2px;
+	border-radius: 2px;
+}
+
+#student-ids h3 {
+	text-align: center;
+	font-weight: 800;
+}
+
+#student-ids dt{
+	font-weight: 500;
+}
+
+#student-ids dd{
+	font-style: italic;
+}
+
 /* ID and Interests section */
 #individual-info-list {
 	display: flex;
@@ -93,7 +111,7 @@
 
 /* Table styles */
 table {
-	width: 50%;
+	width: 90%;
 	border-collapse: collapse;
 }
 
@@ -103,8 +121,9 @@ table caption {
 }
 
 th, td {
-	border: solid rgb(7, 67, 0) 1px;
+	border: solid #074300 1px;
 	padding: 0.4rem;
+	transition: background-color 0.2s;
 }
 
 .name-cell {
@@ -114,6 +133,10 @@ th, td {
 
 tr td:nth-of-type(2) {
 	width: 20%;
+}
+
+td:hover {
+	background-color: #ecffeb;
 }
 
 th, .name-cell {
@@ -128,7 +151,7 @@ thead {
 	background-color: #227925;
 }
 
-/* nth-child selector made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
+/* nth-child selectors made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
 table tbody tr:nth-child(2n+1):nth-child(-n+3), table tbody tr:nth-child(2n+7):nth-child(-n+9){
 	background-color: #e2e2e2;
 }
@@ -145,8 +168,25 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 	background-color: rgb(155, 220, 158);
 }
 
+/* Group Image Styling */
+#group-photo {
+	float: right;
+	display: flex;
+	justify-content: center;
+}
 
-/* Responsiveness for panels */
+#group-photo img{
+	max-width: 70%;
+	min-width: 20%;
+	border: #227925 inset 0.7rem;
+	border-radius: 2%;
+}
+
+
+/* Responsiveness for page layout */
+/* LARGE SCREEN */
+/* When the screen is >1200px wide */
+/* 		Allow more room for the class time in the central cell of group info */
 @media screen and (min-width: 1200px) {
 
 	/* Change width of cells in "Group Info" so the class time can be on one line */
@@ -157,11 +197,56 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 	.group-info-section:nth-of-type(2) {
 		width: 50%;
 	}
+}
+
+/* When the screen is >1350px wide */
+/* 		Student ID aside should be floated to the right */
+@media screen and (min-width: 1350px) {
+	/* Default Student ID Aside Formatting for large screen */
+	#student-ids {
+		float: right;
+		margin: 0 2rem;
+		padding: 0 4%;
+	}
+
+	#student-ids dd{
+		padding-bottom: 1rem;
+	}
+
+	#about-article {
+		width: 60%;
+	}
 	
 }
 
+/* When the screen is <1350px wide */
+/* 		Student ID aside should become vertically aligned to make more room for the other content  */
+@media screen and (max-width:1350px) {
+	/* Student ID Aside Formatting for smaller screen */
+	#student-ids {
+		width: 60%;
+		margin: auto;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
 
-@media screen and (max-width: 1200px) {
+	#student-ids dd{
+		padding-bottom: 1rem;
+		margin: 0;
+	}
+
+	#about-article {
+		width: 90%;
+	}
+
+
+}
+
+/* SMALL SCREEN */
+/* When the screen is <900px wide */
+/* 		Horizontal grids should become vertical */
+/* 		Table expands to fill more space and be more readable */
+@media screen and (max-width: 900px) {
     .panel-holder {
 		flex-direction: column;
 		align-items: center;
@@ -173,14 +258,19 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 		padding: auto;
 		width: 100%;
 	}
+
+	#group-photo {
+		float: none;
+	}
+	
 }
 
-/* Animation for link hover */
+
+Animation for link hover
 a {
 	transition: all 0.2s;
 }
 
 a:hover {
 	text-decoration: underline;
-	font-weight: 400;
 }

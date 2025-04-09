@@ -17,6 +17,7 @@ description: Styles the website home page; index.html
 /* Logo */
 #logo {
     width: 7em;
+    margin: 0.2em;
     max-width: 100%;
 }
 
@@ -44,9 +45,6 @@ header {
     background-size: contain;
     background-repeat: repeat-x;
     width: 100%;
-	padding: 0;
-	margin: 0;
-	max-height: 20%;
 }
 
 body {
@@ -123,24 +121,25 @@ nav a.email:hover {
 
 /* Navigation menu buttons */
 nav div ul {
+    background-color: rgba(66, 163, 2, 0.781);
     display: flex;
-    align-content: space-around;
-    padding-left: 2em;
+    justify-content: space-around;
+    margin-right: 1.5em;
+    width: 20em;
+    padding: 1.5em;
 }
 nav div ul li {
     font-size: large;
     display: inline;
-    padding-right: 2em;
 }
 nav div ul li a {
     font-size: 1.2em;
-    color: #106727;
+    color: #ffffff;
 
 	transition: color 0.1s;
-	transition: font-weight 0.1s;
 }
 nav div ul li a:hover {
-    color: rgb(40, 179, 47);;
+    color: rgb(79, 104, 80);
 }
 
 /* Adaptive header and navigation bar */
@@ -153,16 +152,12 @@ nav div ul li a:hover {
         display: flex;
     }
 
-    nav ul li {
-        padding-right: 1em;
-    }
-
-    nav ul {
+    nav div ul {
         display: flex;
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 790px) {
     #name {
         display: none;
     }
@@ -189,14 +184,15 @@ nav div ul li a:hover {
         min-width: 91.9%;
     }
 }
-@media screen and (max-width: 549px) {
-    nav ul {
-        max-width: 15em;
+@media screen and (max-width: 530px) {
+    nav div ul {
+        max-width: 10em;
+        margin-left: 1em;
+        padding: 0.6em;
     }
 
-    nav ul li {
-        padding-top: 0.4em;
-        padding-bottom: 0.4em;
+    nav div ul li {
+        padding: 0.3em;
     }
 
     #lefthand {
@@ -205,15 +201,16 @@ nav div ul li a:hover {
     }
 }
 @media screen and (max-width: 400px) {
-    nav ul {
+    nav div ul {
         max-width: 5em;
-        margin: 0em;
+        margin: 1em;
     }
 
-    nav ul li {
+    nav div ul li {
         padding: 0em;
     }
 }
+
 
 /* Home page content styling */
 #home_page {
