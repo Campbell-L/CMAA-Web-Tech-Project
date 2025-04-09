@@ -376,11 +376,11 @@ fieldset {
 /* Jobs.html page styling */
 
 /* Main header styling */
-#h1_jobs {
-    text-align: center; 
+.h1_jobs {
+    text-align: center  ; 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;  
-    font-weight: bold; 
+    font-weight: 800;
     color: green; 
 }
 
@@ -402,12 +402,13 @@ fieldset {
     border: 4px dashed mediumseagreen;
     border-radius: 10px;
     margin: 1em;
-    padding: 2em;
+    padding: 3em;
     position: sticky;
-    top: 150px; 
+    top: 150px;
+    margin-left: -10px;
 }
 
-#aside_header {
+.aside_header {
     text-align: center;
     color: green;
 }
@@ -439,6 +440,33 @@ fieldset {
     font-weight: bold;
 }
 
+/* Styles for jobs page adaptive to phone */
+@media screen and (max-width: 768px) {
+
+    .h1_jobs {
+        font-size: 1.5em; 
+    }
+
+    #jobs_aside {
+        float: none; 
+        width: 70%; 
+        margin: 1em auto;
+        position: static; 
+    }
+
+    #network_admin, #software_dev {
+        width: 80%; 
+        margin: 1em auto;
+    }
+
+    #jobs_aside, #network_admin, #software_dev {
+        padding: 1.5em; 
+    }
+
+    #job_positions {
+        padding: 10px; 
+    }
+}
 
 #other_skills_text {
     display: none;
