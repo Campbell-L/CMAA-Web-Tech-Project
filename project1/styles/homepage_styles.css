@@ -39,7 +39,6 @@ h3 {
 header {
 	position: sticky;
 	top: 0;
-<<<<<<< HEAD
     /* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
     background-image: url('images/temp_nav_background.jpg');
     background-position: top left;
@@ -47,14 +46,6 @@ header {
     background-repeat: repeat-x;
     width: 100%;
     z-index: 1000;
-=======
-	/* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
-	background-image: url('images/temp_nav_background.jpg');
-	background-position: top left;
-	background-size: contain;
-	background-repeat: repeat-x;
-	width: 100%;
->>>>>>> 5d4202d7950d43bd3e48b08a77d472d1ea6ea620
 }
 
 body {
