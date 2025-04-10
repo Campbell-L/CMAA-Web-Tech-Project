@@ -266,11 +266,7 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 }
 
 
-Animation for link hover
+/* Animation for link hover */
 a {
 	transition: all 0.2s;
-}
-
-a:hover {
-	text-decoration: underline;
 }
