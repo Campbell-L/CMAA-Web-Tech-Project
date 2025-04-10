@@ -27,7 +27,7 @@
                 <ul>
                     <li><a title="Home Page" href="index.html">Home</a></li>
                     <li><a title="Jobs Desription Page" href="jobs.html">Jobs</a></li>
-                    <li><a title="Appliations Page" href="apply.html"  id="active">Apply</a></li>
+                    <li><a title="Appliations Page" href="apply.html" id="active">Apply</a></li>
                     <li><a title="About Page" href="about.html">About</a></li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
                         <!-- Job Reference Number -->
                         <label for="job_ref">Job Reference Number:</label>
                         <select id="job_ref" name="job_ref" required>
-                            <option value="Please Select">Please Select</option>
+                            <option value="&nbsp;" disabled selected>Please Select</option>
                             <option value="ATCM1">ATCM1</option>
                             <option value="ATCM2">ATCM2</option>
                         </select>
@@ -76,8 +76,7 @@
 
                         <!-- Date of Birth -->
                         <label for="dob">Date of Birth:</label>
-                        <input type="date" id="dob" name="dob" required min="01/01/1900" max="31/03/2025"
-                            title="DD-MM-YYYY">
+                        <input type="date" id="dob" name="dob" required title="DD-MM-YYYY">
                         <br><br>
 
                         <!-- Gender -->
@@ -119,6 +118,7 @@
                         <!-- State -->
                         <label for="state">State:</label>
                         <select id="state" name="state" required>
+                            <option value="&nbsp;" disabled selected>Please Select</option>
                             <option value="VIC">VIC</option>
                             <option value="NSW">NSW</option>
                             <option value="QLD">QLD</option>
