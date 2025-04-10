@@ -131,8 +131,8 @@ nav div ul {
 	display: flex;
 	justify-content: space-around;
 	margin-right: 1.5em;
-	width: 20em;
-	padding: 1.5em;
+	padding: 1.5em;	
+	/* background-color: red; */
 }
 
 nav div ul li {
@@ -146,6 +146,7 @@ nav div ul li a {
 	background-color: rgba(66, 163, 2, 0.781);
 	padding: 1.5rem;
 	transition: color 0.1s;
+	width: 100%;
 }
 
 nav div ul li a#active {
@@ -169,10 +170,9 @@ nav div ul li a:hover {
 		display: flex;
 	}
 
-	nav div ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
+	
+
+	
 }
 
 @media screen and (max-width: 790px) {
@@ -201,6 +201,7 @@ nav div ul li a:hover {
 		justify-content: space-between;
 		min-width: 91.9%;
 	}
+
 }
 
 @media screen and (max-width: 530px) {
@@ -217,6 +218,21 @@ nav div ul li a:hover {
 	#lefthand {
 		justify-content: space-between;
 		min-width: auto;
+	}
+
+	
+	nav div ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: rgba(66, 163, 2, 0.781);
+	}
+
+
+	nav div ul li a {
+		background-color: transparent;
+		padding: 0.3rem;
+		width: 0;
 	}
 }
 
