@@ -132,8 +132,8 @@ nav div ul {
 	display: flex;
 	justify-content: space-around;
 	margin-right: 1.5em;
-	width: 20em;
-	padding: 1.5em;
+	padding: 1.5em;	
+	/* background-color: red; */
 }
 
 nav div ul li {
@@ -147,6 +147,7 @@ nav div ul li a {
 	background-color: rgba(66, 163, 2, 0.781);
 	padding: 1.5rem;
 	transition: color 0.1s;
+	width: 100%;
 }
 
 nav div ul li a#active {
@@ -170,10 +171,9 @@ nav div ul li a:hover {
 		display: flex;
 	}
 
-	nav div ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
+	
+
+	
 }
 
 @media screen and (max-width: 790px) {
@@ -202,6 +202,7 @@ nav div ul li a:hover {
 		justify-content: space-between;
 		min-width: 91.9%;
 	}
+
 }
 
 @media screen and (max-width: 530px) {
@@ -218,6 +219,21 @@ nav div ul li a:hover {
 	#lefthand {
 		justify-content: space-between;
 		min-width: auto;
+	}
+
+	
+	nav div ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: rgba(66, 163, 2, 0.781);
+	}
+
+
+	nav div ul li a {
+		background-color: transparent;
+		padding: 0.3rem;
+		width: 0;
 	}
 }
 
@@ -301,9 +317,9 @@ h4.value_heading {
 
 /* Homepage footer */
 #foot {
-	background-color: #224e2c;
-	padding: 2em;
-	color: #ffffff;
+    background-color: #224e2c;
+    padding: 2em;
+    color: #ffffff;
 }
 
 /* Footer link stlying */
@@ -416,11 +432,11 @@ fieldset {
 
 /* Main header styling */
 .h1_jobs {
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.5em;
-	font-weight: 800;
-	color: green;
+    text-align: center  ; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;  
+    font-weight: 800;
+    color: green; 
 }
 
 /* Jobs quick access links styles */
@@ -436,20 +452,20 @@ fieldset {
 /* This aside section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
 /* Jobs aside section styles */
 #jobs_aside {
-	width: 25%;
-	float: right;
-	border: 4px dashed mediumseagreen;
-	border-radius: 10px;
-	margin: 1em;
-	padding: 2em;
-	position: sticky;
-	top: 150px;
-	margin-left: -10px;
+    width: 25%;
+    float: right;
+    border: 4px dashed mediumseagreen;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 2em;
+    position: sticky;
+    top: 150px;
+    margin-left: -10px;
 }
 
 .aside_header {
-	text-align: center;
-	color: green;
+    text-align: center;
+    color: green;
 }
 
 #aside_ol {
@@ -465,14 +481,13 @@ fieldset {
 }
 
 /* This id section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
-#network_admin,
-#software_dev {
-	border: 8px double mediumseagreen;
-	border-radius: 10px;
-	margin: 1em;
-	padding: 1em;
-	width: 80%;
-	scroll-margin-top: 150px;
+#network_admin, #software_dev {
+    border: 8px double mediumseagreen;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    width: 80%;
+    scroll-margin-top: 150px;
 }
 
 /* Sub header styling in job descriptions*/
