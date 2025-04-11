@@ -256,7 +256,7 @@ nav a.email:hover {
 		background-color: rgb(105, 182, 54);
 	}
 
-	#hamburger:hover + #menu_list, #hamburger:active + #menu_list{
+	#hamburger:hover + #menu_list, #hamburger:focus + #menu_list{
 		display: flex;
 		position: absolute;
 	}
