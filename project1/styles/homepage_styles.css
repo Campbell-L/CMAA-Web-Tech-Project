@@ -73,14 +73,20 @@ a:hover {
 /* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
 /* Navigation bar */
 nav {
+	height: 8em;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
+	align-content: center;
 }
 
 nav div {
 	display: flex;
 	align-items: center;
+}
+
+nav div section {
+	
 }
 
 /* Navigation title */
@@ -127,13 +133,14 @@ nav a.email:hover {
 }
 
 /* Navigation menu buttons */
+#hamburger {
+	display: none;
+}
+
 nav div ul {
-	/* background-color: rgba(66, 163, 2, 0.781); */
 	display: flex;
 	justify-content: space-around;
-	margin-right: 1.5em;
-	padding: 1.5em;	
-	/* background-color: red; */
+	padding: 1.5em;
 }
 
 nav div ul li {
@@ -162,7 +169,7 @@ nav div ul li a:hover {
 }
 
 /* Adaptive header and navigation bar */
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 1203px) {
 	#large_email {
 		display: none;
 	}
@@ -173,15 +180,14 @@ nav div ul li a:hover {
 	
 }
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 1085px) {
 	#name {
 		display: none;
 	}
 
 	#short_name {
 		display: block;
-		margin-top: 0em;
-		margin-bottom: 0.5em;
+		margin: 0em;
 		padding: 0em;
 	}
 
@@ -197,7 +203,7 @@ nav div ul li a:hover {
 
 	#lefthand {
 		justify-content: space-between;
-		min-width: 91.9%;
+		min-width: 96%;
 	}
 
 }
@@ -233,22 +239,37 @@ nav div ul li a:hover {
 	}
 
 	nav div ul li a#active {
-		background-color: rgba(17, 100, 8, 0.381);
+		background-color: rgb(51, 104, 63);
 		border: rgb(31, 61, 32) solid 2px;
 	}
 }
 
 @media screen and (max-width: 400px) {
-	nav div ul {
-		max-width: 5em;
-		margin: 1em;
+	#hamburger {
+		bottom:50%;
+		position: absolute;
+		display: flex;
+		font-size: 30px;
+		padding: 0.3em;
+		background-color: #45a049;
 	}
 
-	nav div ul li {
-		padding: 0em;
+	nav div ul {
+		display: none;
+		max-width: 5em;
+		margin: 0em;
+	}
+
+	#hamburger:hover + #menu_list{
+		display: flex;
+		position: absolute;
+	}
+
+	#menu_list:hover {
+		display: flex;
+		position: absolute;
 	}
 }
-
 
 /* Home page content styling */
 #home_page {
