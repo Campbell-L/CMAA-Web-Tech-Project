@@ -467,11 +467,10 @@ fieldset {
 
 /* Main header styling */
 .h1_jobs {
-    text-align: center  ; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;  
-    font-weight: 800;
-    color: green; 
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1.5em;
+	font-weight: 800;
 }
 
 /* Jobs quick access links styles */
@@ -487,20 +486,21 @@ fieldset {
 /* This aside section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
 /* Jobs aside section styles */
 #jobs_aside {
-    width: 25%;
-    float: right;
-    border: 4px dashed mediumseagreen;
-    border-radius: 10px;
-    margin: 1em;
-    padding: 2em;
-    position: sticky;
-    top: 150px;
-    margin-left: -10px;
+	width: 25%;
+	float: right;
+	border: 8px double mediumseagreen;
+	border-radius: 10px;
+	margin: 1em;
+	padding: 2em;
+	position: sticky;
+	top: 150px;
+	margin-left: -10px;
+	box-shadow: 5px 10px mediumseagreen;
 }
 
 .aside_header {
-    text-align: center;
-    color: green;
+	text-align: center;
+	font-weight: 600;
 }
 
 #aside_ol {
@@ -516,13 +516,15 @@ fieldset {
 }
 
 /* This id section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
-#network_admin, #software_dev {
-    border: 8px double mediumseagreen;
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1em;
-    width: 80%;
-    scroll-margin-top: 150px;
+#network_admin,
+#software_dev {
+	border: 8px double mediumseagreen;
+	border-radius: 10px;
+	margin: 1em;
+	padding: 1em;
+	width: 80%;
+	scroll-margin-top: 150px;
+	background-color: rgb(233, 251, 241)
 }
 
 /* Sub header styling in job descriptions*/
@@ -559,43 +561,4 @@ fieldset {
 	#job_positions {
 		padding: 1em;
 	}
-}
-
-#other_skills_text {
-	display: none;
-}
-
-#other_skills:checked~#other_skills_text {
-	display: block;
-	margin-top: 10px;
-}
-
-#button-container {
-	display: inline-block;
-	justify-content: center;
-	align-items: center;
-}
-
-button {
-	background-color: black;
-	color: white;
-	padding: 0.5em 1em;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	transition: background-color 0.3s, transform 0.3s;
-	font-size: 16px;
-	display: inline-block;
-	margin: 1em;
-}
-
-button:hover {
-	background-color: #45a049;
-	transform: translateY(-2px);
-}
-
-/* Focus effect */
-button:focus {
-	outline: 3px solid #fff;
-	outline-offset: 2px;
 }
