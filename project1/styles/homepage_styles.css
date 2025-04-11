@@ -10,7 +10,7 @@ description: Styles the website home page; index.html
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-	font-family: "Figtree";
+	font-family: "Figtree", sans-serif;
 	font-weight: 200;
 }
 
@@ -120,6 +120,7 @@ nav a.email {
 	display: none;
 	padding-left: 0.8em;
 	padding-right: 0.8em;
+	font-family: sans-serif;
 }
 
 /* Navigation email button on hover */
