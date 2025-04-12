@@ -1,0 +1,903 @@
+/*
+filename: Page Styles
+authors: Asha Burdack, Mack Cropman, Aaron Dimovski, Campbell Leishman
+created: 2/04/2025
+last modified: 12/04/2025
+description: Styles are applied to all pages
+*/
+
+/* Imports fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* All pages general styling */
+
+* {
+	font-family: "Figtree", sans-serif;
+	font-weight: 200;
+}
+
+/* Logo */
+#logo {
+	width: 7em;
+	margin: 0.2em;
+	max-width: 100%;
+}
+
+/* Heading size */
+h1 {
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 900;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+
+header {
+	position: sticky;
+	top: 0;
+	/* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
+	background-image: url('images/temp_nav_background.jpg');
+	background-position: top left;
+	background-size: contain;
+	background-repeat: repeat-x;
+	width: 100%;
+	z-index: 1000;
+}
+
+body {
+	margin: 0;
+}
+
+/* Horizontal bar line */
+hr {
+	color: #36761f;
+	border-style: solid;
+}
+
+/* Anchor styling */
+a {
+	text-decoration: none;
+	font-weight: 500;
+	color: rgb(20, 120, 0);
+	/* Animation for link hover */
+	transition: all 0.2s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(30, 68, 23);
+}
+
+/* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
+/* Navigation bar */
+nav {
+	height: 8em;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+}
+
+/* Navigation title */
+nav h1 {
+	padding-left: 1em;
+}
+
+#name {
+	max-width: 200px;
+}
+
+#short_name {
+	display: none;
+}
+
+#left_side {
+	display: flex;
+
+}
+
+/* Navigation email button */
+nav a {
+	font-weight: 100;
+}
+
+nav a.email {
+	color: rgb(0, 0, 0);
+	background-color: #ffffff;
+	padding: 0.7em;
+	margin-right: 1em;
+	border: 2px solid rgb(0, 110, 16);
+}
+
+#small_email {
+	display: none;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	font-family: sans-serif;
+}
+
+/* Navigation email button on hover */
+nav a.email:hover {
+	color: rgb(255, 255, 255);
+	background-color: #135d11;
+}
+
+/* Navigation menu buttons */
+#hamburger {
+	display: none;
+}
+
+#page_menu ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+#page_menu ul li {
+	font-size: large;
+	display: inline;
+}
+
+#page_menu ul li a {
+	padding: 1em;
+	font-size: 1.2em;
+	color: #ffffff;
+	background-color: rgba(66, 163, 2, 0.781);
+	transition: color 0.1s;
+	width: 100%;
+}
+
+#page_menu ul li a#active {
+	background-color: rgba(17, 100, 8, 0.781);
+	border: rgb(31, 61, 32) solid 2px;
+}
+
+#page_menu ul li a:hover {
+	color: rgb(55, 77, 55);
+}
+
+#hamburger:hover {
+	color: rgb(55, 77, 55);
+}
+
+/* Adaptive header and navigation bar */
+@media screen and (max-width: 1006px) {
+	#large_email {
+		display: none;
+	}
+
+	#small_email {
+		display: flex;
+	}
+
+}
+
+@media screen and (max-width: 884px) {
+	#name {
+		display: none;
+	}
+
+	#short_name {
+		display: block;
+		margin: 0em;
+		padding: 0em;
+	}
+
+	#logo {
+		max-width: 5em;
+	}
+
+	#logo_title {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	#lefthand {
+		justify-content: space-between;
+		min-width: 89%;
+	}
+
+	#page_menu {
+		margin-right: 2em;
+	}
+
+}
+
+@media screen and (max-width: 611px) {
+	#page_menu ul li {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#lefthand {
+		min-width: auto;
+	}
+
+	#page_menu {
+		margin-left: 2em;
+	}
+
+	#page_menu ul {
+		top: 54%;
+		padding: 0em;
+		max-width: 7.5em;
+		display: none;
+		flex-wrap: wrap;
+	}
+
+	#page_menu ul li a {
+		padding: 0.5em;
+		text-align: center;
+		background-color: rgb(105, 182, 54);
+	}
+
+	#page_menu ul li a#active {
+		background-color: rgb(50, 110, 60);
+	}
+
+	#hamburger {
+		width: 5em;
+		text-align: center;
+		bottom: 34%;
+		position: absolute;
+		display: block;
+		font-size: 1.5em;
+		padding: 0.5em;
+		padding-left: 0em;
+		padding-right: 0em;
+		color: white;
+		background-color: rgb(105, 182, 54);
+	}
+
+	#hamburger:hover+#menu_list,
+	#hamburger:active+#menu_list {
+		display: flex;
+		position: absolute;
+	}
+
+	#menu_list:hover {
+		display: flex;
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#page_menu ul {
+		max-width: 6.75em;
+	}
+
+	#hamburger {
+		transition: 1s;
+		width: 4.5em;
+		font-size: 1.5em;
+	}
+
+	#page_menu {
+		transition: 1s;
+		margin-left: 0.3em;
+	}
+}
+
+/* Home page content styling */
+#home_page {
+	/* https://www.freepik.com/free-vector/geometric-background-green-tones_6195968.htm#fromView=keyword&page=1&position=0&uuid=3e5abae6-39ee-4183-8de1-a7326c720b90&query=Green+Geometric+Pattern */
+	background-image: url('images/homepage_background.jpg');
+	background-position: top left;
+	background-size: contain;
+}
+
+#home_page_title {
+	margin: 2%;
+	font-size: 3em;
+	text-align: center;
+}
+
+#slogan {
+	text-align: center;
+	margin: 1%;
+}
+
+#main_home {
+	background-color: #fff;
+	margin: 3%;
+	padding: 1em;
+	border: 2px solid green;
+	border-radius: 10px;
+}
+
+section.homepage {
+	border: 3px solid black;
+}
+
+/* homepage company values stlying and spacing */
+h4.value_heading {
+	font-weight: 500;
+}
+
+#value_boxes {
+	display: flex;
+	justify-content: space-around;
+}
+
+#value_boxes div {
+	padding: 0.7em;
+	border: 3px solid rgb(90, 122, 48);
+	margin: 1%;
+	background-color: #ffffff;
+	max-width: 25em;
+}
+
+#value_boxes div h4 {
+	margin: 0;
+	color: #000000;
+}
+
+#value_boxes div p {
+	margin: 0;
+	color: #000000;
+}
+
+#values,
+#benefits,
+#who_are_we,
+#introduction {
+	padding: 1em;
+}
+
+/* Homepage footer */
+#foot {
+	background-color: #224e2c;
+	padding: 2em;
+	color: #ffffff;
+}
+
+/* Footer link stlying */
+#foot a {
+	color: #aef6ab;
+}
+
+#foot a:hover {
+	color: #778276;
+}
+
+/* Adaptive home page content */
+@media screen and (max-width: 600px) {
+	#value_boxes {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-end;
+	}
+}
+
+@media screen and (min-width: 870px) {
+	#main_home {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+	}
+
+	#lefthand_home {
+		max-width: 48%;
+		flex-direction: column;
+		border-right: 2px solid green;
+	}
+
+	#introduction {
+		max-width: 100%;
+		max-height: 10em;
+	}
+
+	#who_are_we {
+		max-width: 100%;
+	}
+
+	#benefits {
+		max-width: 47%;
+	}
+
+	#values {
+		align-self: flex-end;
+	}
+}
+
+/* styling for apply.html page */
+
+section div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+#postcode {
+	width: 15%;
+}
+
+#phone {
+	width: 25%;
+}
+
+#email {
+	width: 50%;
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 100%;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+legend {
+	color: black;
+	text-align: left;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+fieldset {
+	border: 1px solid black;
+	padding: 1.25em;
+	margin: 1em 0;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+#job_ref {
+	width: 30%;
+}
+
+#AppForm_h1 {
+	text-align: left;
+	font-size: 2em;
+	color: black;
+}
+
+/*form other skills style*/
+/* Hide the textarea by default */
+#other_skills_text {
+	display: none;
+	margin-top: 10px;
+}
+
+/* Show textarea when the checkbox is checked */
+#other_skills:checked~#other_skills_text {
+	display: block;
+}
+
+
+
+/*form button styles*/
+#button-container {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5em 0;
+	padding: 0.5em;
+	margin-left: 19%;
+}
+
+#button-container button {
+	background-color: black;
+	color: white;
+	padding: 0.5em 1em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1em;
+	}
+
+	#AppForm_h1 {
+		text-align: center;
+		font-size: 2em;
+	}
+
+	#Instructions {
+		text-align: center;
+	}
+
+	#button-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		justify-content: center;
+		align-items: center;
+		margin: 0.5em 0;
+	}
+}
+
+
+/* Jobs.html page styling */
+
+/* Main header styling */
+.h1_jobs {
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1.5em;
+	font-weight: 800;
+}
+
+/* Jobs quick access links styles */
+.jobs_link {
+	color: green
+}
+
+.jobs_link:hover {
+	color: mediumseagreen;
+	text-decoration: underline;
+}
+
+/* This aside section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
+/* Jobs aside section styles */
+#jobs_aside {
+	width: 25%;
+	float: right;
+	border: 8px double mediumseagreen;
+	border-radius: 10px;
+	margin: 1em;
+	padding: 2em;
+	position: sticky;
+	top: 150px;
+	margin-left: -10px;
+	box-shadow: 5px 10px mediumseagreen;
+}
+
+.aside_header {
+	text-align: center;
+	font-weight: 600;
+}
+
+#aside_ol {
+	color: green;
+}
+
+
+/* Job listings styling */
+#job_positions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* This id section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
+#network_admin,
+#software_dev {
+	border: 8px double mediumseagreen;
+	border-radius: 10px;
+	margin: 1em;
+	padding: 1em;
+	width: 80%;
+	scroll-margin-top: 150px;
+	background-color: rgb(233, 251, 241)
+}
+
+/* Sub header styling in job descriptions*/
+.job_desc_h {
+	font-weight: bold;
+}
+
+/* Styles for jobs page adaptive to phone */
+@media screen and (max-width: 768px) {
+
+	.h1_jobs {
+		font-size: 1.5em;
+	}
+
+	#jobs_aside {
+		float: none;
+		width: 70%;
+		margin: 1em auto;
+		position: static;
+	}
+
+	#network_admin,
+	#software_dev {
+		width: 80%;
+		margin: 1em auto;
+	}
+
+	#jobs_aside,
+	#network_admin,
+	#software_dev {
+		padding: 1.5em;
+	}
+
+	#job_positions {
+		padding: 1em;
+	}
+}
+
+
+/* About page styling */
+#about-article {
+	background-color: white;
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 2rem;
+}
+
+.page-title h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin: 0;
+	margin-top: 1.5rem;
+}
+
+.page-title {
+	background: linear-gradient(to bottom, #329f2c, #227925);
+	color: white;
+	padding: 1rem;
+	margin: 0;
+}
+
+.page-title p {
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+	margin: 0;
+	margin-bottom: 1.5rem;
+}
+
+.body-section h3 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.body-section:nth-of-type(n+2) h3 {
+	margin-top: 7rem;
+}
+
+
+.panel-holder {
+	background-color: rgb(0, 110, 16);
+	display: flex;
+	justify-content: space-between;
+	gap: 0.1rem;
+}
+
+.panel {
+	background-color: #ffffff;
+	padding: auto;
+	display: block;
+	width: 100%;
+}
+
+.panel dl dt {
+	text-align: center;
+}
+
+.group-info-section dl dt {
+	font-style: italic;
+	color: #555555;
+	font-weight: 100;
+}
+
+.panel dl dd {
+	text-align: center;
+	font-weight: 600;
+	margin: 0;
+} 
+
+.group-info-section dl dd{
+	font-size: 50px;
+}
+
+.contribution-section dl dt{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.contribution-section dl dd ul li{
+	list-style: circle;
+	margin: 0;
+	text-align: left;
+}
+
+/* Student ID Aside */
+#student-ids {
+	background-color: #dfdfdf;
+	border: #227925 solid 2px;
+	border-radius: 2px;
+}
+
+#student-ids h3 {
+	text-align: center;
+	font-weight: 800;
+}
+
+#student-ids dt{
+	font-weight: 500;
+}
+
+#student-ids dd{
+	font-style: italic;
+}
+
+/* ID and Interests section */
+#individual-info-list {
+	display: flex;
+	justify-content: center;
+}
+
+/* Table styles */
+table {
+	width: 90%;
+	border-collapse: collapse;
+}
+
+table caption {
+	margin-bottom: 0.4rem;
+	font-style: italic;
+}
+
+th, td {
+	border: solid #074300 1px;
+	padding: 0.4rem;
+	transition: background-color 0.2s;
+}
+
+.name-cell {
+	text-align: center;
+	width: 10%;
+}
+
+tr td:nth-of-type(2) {
+	width: 20%;
+}
+
+td:hover {
+	background-color: #ecffeb;
+}
+
+th, .name-cell {
+	font-weight: 500;
+}
+
+th {
+	color: white;
+}
+
+thead {
+	background-color: #227925;
+}
+
+/* nth-child selectors made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
+table tbody tr:nth-child(2n+1):nth-child(-n+3), table tbody tr:nth-child(2n+7):nth-child(-n+9){
+	background-color: #e2e2e2;
+}
+
+table tbody tr:nth-child(2), table tbody tr:nth-child(8){
+	background-color: #c4c4c4;
+}
+
+table tbody tr:nth-child(2n+4):nth-child(-n+6), table tbody tr:nth-child(2n+10):nth-child(-n+12){
+	background-color: rgb(207, 255, 209);
+}
+
+table tbody tr:nth-child(5), table tbody tr:nth-child(11){
+	background-color: rgb(155, 220, 158);
+}
+
+/* Group Image Styling */
+#group-photo {
+	float: right;
+	display: flex;
+	justify-content: center;
+}
+
+#group-photo img{
+	max-width: 70%;
+	min-width: 20%;
+	border: #227925 inset 0.7rem;
+	border-radius: 2%;
+}
+
+
+/* Responsiveness for page layout */
+/* LARGE SCREEN */
+/* When the screen is >1200px wide */
+/* 		Allow more room for the class time in the central cell of group info */
+@media screen and (min-width: 1200px) {
+
+	/* Change width of cells in "Group Info" so the class time can be on one line */
+	.group-info-section:first-of-type, .group-info-section:last-of-type {
+		width: 25%;
+	}
+	
+	.group-info-section:nth-of-type(2) {
+		width: 50%;
+	}
+}
+
+/* When the screen is >1350px wide */
+/* 		Student ID aside should be floated to the right */
+@media screen and (min-width: 1350px) {
+	/* Default Student ID Aside Formatting for large screen */
+	#student-ids {
+		float: right;
+		margin: 0 2rem;
+		padding: 0 4%;
+	}
+
+	#student-ids dd{
+		padding-bottom: 1rem;
+	}
+
+	#about-article {
+		width: 60%;
+	}
+	
+}
+
+/* When the screen is <1350px wide */
+/* 		Student ID aside should become vertically aligned to make more room for the other content  */
+@media screen and (max-width:1350px) {
+	/* Student ID Aside Formatting for smaller screen */
+	#student-ids {
+		width: 60%;
+		margin: auto;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	#student-ids dd{
+		padding-bottom: 1rem;
+		margin: 0;
+	}
+
+	#about-article {
+		width: 90%;
+	}
+
+
+}
+
+/* SMALL SCREEN */
+/* When the screen is <900px wide */
+/* 		Horizontal grids should become vertical */
+/* 		Table expands to fill more space and be more readable */
+@media screen and (max-width: 900px) {
+    .panel-holder {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.1rem;
+	}
+
+	.panel {
+		background-color: #ffffff;
+		padding: auto;
+		width: 100%;
+	}
+
+	#group-photo {
+		float: none;
+	}
+	
+}
