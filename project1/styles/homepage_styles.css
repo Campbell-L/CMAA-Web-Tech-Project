@@ -1,9 +1,9 @@
 /*
 filename: Homepage Styles
-authors: Asha Burdack
+authors: Asha Burdack, Mack Cropman
 created: 2/04/2025
-last modified: 6/04/2025
-description: Styles the website home page; index.html
+last modified: 12/04/2025
+description: Styles the applies to all pages (still needs to merge with other css)
 */
 
 /* Imports fonts from Google Fonts */
@@ -39,13 +39,13 @@ h3 {
 header {
 	position: sticky;
 	top: 0;
-    /* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
-    background-image: url('images/temp_nav_background.jpg');
-    background-position: top left;
-    background-size: contain;
-    background-repeat: repeat-x;
-    width: 100%;
-    z-index: 1000;
+	/* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
+	background-image: url('images/temp_nav_background.jpg');
+	background-position: top left;
+	background-size: contain;
+	background-repeat: repeat-x;
+	width: 100%;
+	z-index: 1000;
 }
 
 body {
@@ -175,7 +175,7 @@ nav a.email:hover {
 	#small_email {
 		display: flex;
 	}
-	
+
 }
 
 @media screen and (max-width: 884px) {
@@ -205,7 +205,7 @@ nav a.email:hover {
 	}
 
 	#page_menu {
-		margin-right:2em;
+		margin-right: 2em;
 	}
 
 }
@@ -253,11 +253,12 @@ nav a.email:hover {
 		padding: 0.5em;
 		padding-left: 0em;
 		padding-right: 0em;
-		color:white;
+		color: white;
 		background-color: rgb(105, 182, 54);
 	}
 
-	#hamburger:hover + #menu_list, #hamburger:active + #menu_list{
+	#hamburger:hover+#menu_list,
+	#hamburger:active+#menu_list {
 		display: flex;
 		position: absolute;
 	}
@@ -353,9 +354,9 @@ h4.value_heading {
 
 /* Homepage footer */
 #foot {
-    background-color: #224e2c;
-    padding: 2em;
-    color: #ffffff;
+	background-color: #224e2c;
+	padding: 2em;
+	color: #ffffff;
 }
 
 /* Footer link stlying */
@@ -430,7 +431,8 @@ section div {
 	width: 50%;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
 	width: 100%;
 	padding: 0.5em;
 	margin: 0.5em 0;
@@ -463,6 +465,70 @@ fieldset {
 	font-size: 2em;
 	color: black;
 }
+
+/*form other skills style*/
+/* Hide the textarea by default */
+#other_skills_text {
+	display: none;
+	margin-top: 10px;
+}
+
+/* Show textarea when the checkbox is checked */
+#other_skills:checked~#other_skills_text {
+	display: block;
+}
+
+
+
+/*form button styles*/
+#button-container {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5em 0;
+	padding: 0.5em;
+	margin-left: 19%;
+}
+
+#button-container button {
+	background-color: black;
+	color: white;
+	padding: 0.5em 1em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1em;
+	}
+
+	#AppForm_h1 {
+		text-align: center;
+		font-size: 2em;
+	}
+
+	#Instructions {
+		text-align: center;
+	}
+
+	#button-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		justify-content: center;
+		align-items: center;
+		margin: 0.5em 0;
+	}
+}
+
 
 /* Jobs.html page styling */
 
@@ -563,3 +629,5 @@ fieldset {
 		padding: 1em;
 	}
 }
+
+

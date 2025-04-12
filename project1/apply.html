@@ -9,7 +9,7 @@
     <meta name="keywords" content="form, application, job, position, apply, submit">
     <title>Apply</title>
 
-	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles/homepage_styles.css">
 </head>
 
@@ -31,7 +31,7 @@
                     <label id="hamburger">Pages&#9662;</label>
                     <ul id="menu_list">
                         <li><a title="Home Page" href="index.html">Home</a></li>
-                        <li><a title="Job Desription Page" href="jobs.html">Jobs</a></li>                
+                        <li><a title="Job Desription Page" href="jobs.html">Jobs</a></li>
                         <li><a title="Appliation Page" href="apply.html" id="active">Apply</a></li>
                         <li><a title="About Page" href="about.html">About</a></li>
                     </ul>
@@ -51,20 +51,19 @@
         <section>
             <div>
                 <h1 id="AppForm_h1">Application Form</h1>
-                <p>Please fill out the form below to apply for the job position.</p>
-                <p>All fields are required unless otherwise specified.</p>
+                <p id="Instructions">Please fill out the form below to apply for the job position. <br> All fields are required unless otherwise specified.</p>
 
-                <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                <form  id="applicationForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
                     <fieldset>
                         <legend>Job Details</legend>
-                        <!-- Job Reference Number -->
+                        <!-- Job Title -->
+                        <p>Please select valid option below</p>
                         <label for="job_ref">Job Reference Number:</label>
                         <select id="job_ref" name="job_ref" required>
-                            <option value="&nbsp;" disabled selected>Please Select</option>
+                            <option disabled selected>-- Please Select --</option>
                             <option value="ATCM1">ATCM1</option>
                             <option value="ATCM2">ATCM2</option>
                         </select>
-                        <br>
                     </fieldset>
                     <fieldset>
                         <legend>Personal Details</legend>
@@ -84,18 +83,12 @@
                         <label for="dob">Date of Birth:</label>
                         <input type="date" id="dob" name="dob" required title="DD-MM-YYYY">
                         <br><br>
-
-                        <!-- Gender -->
-                        <fieldset>
-                            <legend>Gender</legend>
-                            <label for="male">Male</label>
-                            <input type="radio" id="male" name="gender" value="Male" required>
-                            <label for="female">Female</label>
-                            <input type="radio" id="female" name="gender" value="Female" required>
-                            <label for="other">Other</label>
-                            <input type="radio" id="other" name="gender" value="Other" required>
+                        <fieldset id="Gender">
+                            <legend>Gender:</legend>
+                            <label><input type="radio" name="gender" value="Male" required> Male</label>
+                            <label><input type="radio" name="gender" value="Female"> Female</label>
+                            <label><input type="radio" name="gender" value="Other"> Other</label>
                         </fieldset>
-                        <br>
 
                         <!-- Phone Number -->
                         <label for="phone">Phone Number:</label>
@@ -124,7 +117,7 @@
                         <!-- State -->
                         <label for="state">State:</label>
                         <select id="state" name="state" required>
-                            <option value="&nbsp;" disabled selected>Please Select</option>
+                            <option disabled selected>-- Please Select --</option>
                             <option value="VIC">VIC</option>
                             <option value="NSW">NSW</option>
                             <option value="QLD">QLD</option>
@@ -145,7 +138,7 @@
                     </fieldset>
 
                     <!-- Skills -->
-                    <fieldset>
+                    <fieldset id="Skills-group">
                         <legend>Skills:</legend>
                         <label>
                             <input type="checkbox" id="skill1" name="skills[]" value="Excellent problem-solving skills">
@@ -166,7 +159,8 @@
                         <br>
                         <label>
                             <input type="checkbox" id="skill4" name="skills[]"
-                                value="Work proficientlly in a team enviroment"> Work proficientlly in a team enviroment
+                                value="Work proficientlly in a team envirnoment"> Work proficientlly in a team
+                            environment
                         </label>
                         <br>
                         <label>
@@ -189,9 +183,10 @@
                     </fieldset>
                     <br>
                     <div id="button-container">
-                        <button type="submit">Submit Application</button>
-                        <button type="reset">Reset</button>
-                        <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+                        <button class="FormButton" type="submit">Submit Application</button>
+                        <button class="FormButton" type="reset">Reset</button>
+                        <button class="FormButton" type="button"
+                            onclick="window.location.href='index.html'">Cancel</button>
                     </div>
                 </form>
             </div>
