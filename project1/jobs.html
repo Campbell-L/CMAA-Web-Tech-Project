@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Aaron Dimovski">
     <meta name="description" content="Job listings page for avaiable positions">
     <meta name="keywords" content=" job, position, available, vacancy">
     <title>Jobs</title>
@@ -12,251 +13,272 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
-<div>
-	<header id="head">
-        <!-- Navigation bar -->
-		<div id="main-header-content">
-            <div id="lefthand">
-                <div id="logo_title">
-                    <!-- Company logo -->
-                    <a href="index.html" title="Homepage"><img id="logo" alt="ATCM logo" title="ATCM: to Homepage" src="images/temp_logo.png"></a>
-                    <h1 id="short_name">ATCM</h1>
+<body>
+    <div>
+        <header id="head">
+            <!-- Navigation bar -->
+            <div id="main-header-content">
+                <div id="lefthand">
+                    <div id="logo_title">
+                        <!-- Company logo -->
+                        <a href="index.html" title="Homepage"><img id="logo" alt="ATCM logo" title="ATCM: to Homepage"
+                                src="images/temp_logo.png"></a>
+                        <h1 id="short_name">ATCM</h1>
+                    </div>
+                    <!-- Company Name -->
+                    <h1 id="name">Austech Computing and Manufacturing</h1>
+                    <!-- Menu links -->
+                    <nav id="page_menu">
+                        <label id="hamburger">Pages&#9662;</label>
+                        <ul id="menu_list">
+                            <li><a title="Home Page" href="index.html">Home</a></li>
+                            <li><a title="Job Desription Page" href="jobs.html" id="active">Jobs</a></li>
+                            <li><a title="Appliation Page" href="apply.html">Apply</a></li>
+                            <li><a title="About Page" href="about.html">About</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <!-- Company Name -->
-                <h1 id="name">Austech Computing and Manufacturing</h1>
-                <!-- Menu links -->
-                <nav id="page_menu">
-                    <label id="hamburger">Pages&#9662;</label>
-                    <ul id="menu_list">
-                        <li><a title="Home Page" href="index.html">Home</a></li>
-                        <li><a title="Job Desription Page" href="jobs.html" id="active">Jobs</a></li>
-                        <li><a title="Appliation Page" href="apply.html">Apply</a></li>
-                        <li><a title="About Page" href="about.html">About</a></li>
-                    </ul>
-                </nav>
+
+                <div id="righthand">
+                    <!-- Email link -->
+                    <a class="email" id="small_email" title="Email for further infomation"
+                        href="mailto:info@austechcm.com.au">&#128386;</a>
+                    <a class="email" id="large_email" title="Email for further infomation"
+                        href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
+                </div>
             </div>
+            <hr>
+        </header>
 
-            <div id="righthand">
-                <!-- Email link -->
-                <a class="email" id="small_email" title="Email for further infomation"
-                    href="mailto:info@austechcm.com.au">&#128386;</a>
-                <a class="email" id="large_email" title="Email for further infomation"
-                    href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
-            </div>
-		</div>
-		<hr>
-    </header>
-
-    <!-- Main heading of jobs page-->
-    <div class="h1_jobs">
-        <h1 class="h1_jobs">Available Positions</h1>
-    </div>
-
-    <!-- A container used to contian the sticky aside -->
-    <main>
-        <!-- Aside element used for quick naviagtion to available jobs-->
-        <aside id="jobs_aside">
-            <h2 class="aside_header">Quick Access for</h2>
-            <h2 class="aside_header">Current employment oppurtunities:</h2>
-            <ol id="aside_ol">
-                <li> <a href="#network_admin" class="jobs_link">Network Adminsitrator</a></li>
-                <li> <a href="#software_dev" class="jobs_link">Senior Full-Stack Software Developer</a></li>
-            </ol>
-        </aside>
-
-        <!--Job Position 1: Network Administrator-->
-        <div id="job_positions">
-            <section id="network_admin">
-                <!--Hyperlink to resource for reference-->
-                <!--https://www.linkedin.com/jobs/view/4187493257?trk=li_appcast_Global_careers_jobsgtm_a26fdb21-e6c8-4e30-ac01-94f999ffd388_job-dist&utm_medium=jobdist&mcid=6810586802156523523&utm_source=appcast&ePP=CwEAAAGV2WVT73GJbpFzAVikb1o6028yo9kpqiCAcfUzzf9HBWhQiCYjCQi-myZRffvvyzPoCgUoln-wSvmjUiqmKHB59_BlHa63FUPw5A&ccuid=60879276924-->
-
-                <!--Specific Job information: Title, Ref No., Company, Location and Salary-->
-                <h2>Network Adminstrator</h2>
-                <h3> Reference Number: ATCM1</h3>
-                <h3>AusTech Computing and Manufacturing</h3>
-                <p>&#x1F4CD;On Site</p>
-                <p>&#36;90k-100k yearly est.</p>
-
-                <!--Job Description-->
-                <h4 class="job_desc_h">Position Description</h4>
-                <p>A Network Administator positon involves the configuration and handling of operational systems with
-                    various
-                    network infrastructure. <br>This role is responsible for managing on-premise tasks and contributing to a
-                    secure online enviroment. The Network Adminsitrator will also be in commuincation with various other
-                    positions or teams and lead collaboration in various technolgoical infrastcture projects.
-                    <br> You will report to the IT Operations Manager.
-                </p>
-
-                <!--List of key responsibilities for the position-->
-                <h4 class="job_desc_h">Key Responsibilites</h4>
-                <ul>
-                    <li>Network Management</li>
-                    <li>Security Responsibilites</li>
-                    <li>Maintaing Cloud infrastcture</li>
-                    <li>Documentation</li>
-                    <li>Troubleshooting</li>
-                </ul>
-
-                <!--Required attributes section-->
-                <h4 class="job_desc_h">Essential Qualifications</h4>
-                <ul>
-                    <li>5+ Years of experience in system adminsitrations fields with expertise in network infrastutrue and
-                        cloud
-                        services</li>
-                    <li>Proficient in Windows Sever enviroments</li>
-                    <li>Strong knowledge of virtualization technologies (Hyper-V).</li>
-                    <li>Experience with cloud platforms (AWS).</li>
-                    <li>Networking knowledge (TCP/IP, DNS, DHCP, VPN, VLANs, firewalls).</li>
-                    <li>Experience in scripting languages (e.g., PowerShell, Bash).</li>
-                    <li>Knowledge of IT security standards and best practices (e.g., firewalls, intrusion detection,
-                        encryption).</li>
-                </ul>
-
-                <!--Preferrable attributes section-->
-                <h4 class="job_desc_h">Preferrable Skills</h4>
-                <ul>
-                    <li>Excellent problem-solving skills</li>
-                    <li>Ability to manage various projects and tasks simultaneously</li>
-                    <li>Strong communication skills, including verbal and written</li>
-                    <li>Work proficientlly in a team enviroment</li>
-                    <li>Attention to detail</li>
-                    <li>Professional organisational skills</li>
-                </ul>
-                <p>If successful, please contact Hiring Manager: Mack Cropman, <a class="jobs_link"
-                        href="mailto:cropmanmack@gmail.com">cropmanmack@gmail.com</a></p>
-
-
-                <!--Link to apply.html-->
-                <a href="apply.html" class="jobs_link">Apply Now</a>
-            </section>
-
-            <!--Job Position 2-->
-            <section id="software_dev">
-                <!--Hyperlink to resource for reference-->
-                <!--https://www.linkedin.com/jobs/view/4187179429?trk=li_appcast_Global_careers_jobsgtm_fa4659c3-0501-447d-878b-e79b6bc5b4d0_job-dist&utm_medium=jobdist&mcid=6810586802156523522&utm_source=appcast&ePP=CwEAAAGV2WCLbjXDzSObNRuCVqBm6f4lUgGy34gLmQQJl2hSgo99F0-Ad_VgRbEbW2rMq8jvkrQk4W9f1l5hXe0GDSOZ7qHKZM79aO9nLg&ccuid=60907199002&original_referer=https%3A%2F%2Fclick.appcast.io%2F-->
-
-                <!--Specific Job information: Title, Ref No., Company, Location and Salary-->
-                <h2>Senior Full-Stack Software Developer</h2>
-                <h3> Reference Number: ATCM2</h3>
-                <h3>AusTech Computing and Manufacturing</h3>
-                <p>&#x1F4CD;On Site or Remote</p>
-                <p>&#36;80k-100k yearly</p>
-
-                <!--Job Description-->
-                <h4 class="job_desc_h">Position Description</h4>
-                <p>As a Software Developer, you will manage the frontend and backend DANA framework which is our enviroment
-                    for our AusTech platform. In your role you will work closely with our Project Manager and a myriad of
-                    other development teams to create intuitive and engaing UI, as well as developing high-performance
-                    backend solutions.
-                    <br>You will report to the Technical Lead on your project progress.
-                </p>
-
-                <!--List of key responsibilities for the position-->
-                <h4 class="job_desc_h">Key Responsibilites</h4>
-                <ul>
-                    <li>Front-End:
-                        <ul>
-                            <li>Design and implement user-friendly web interfaces</li>
-                            <li>Create an engaging UI that facilitates a positive user experience</li>
-                            <li>Ensure the technical feasibility of UI designs, optimizing the user experience across
-                                different devices and browsers.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Back-End:
-                        <ul>
-                            <li>Develop, test, and maintain Linux-based server-side logic and APIs using technologies like
-                                Node.</li>
-                            <li>Work with databases (MySQL) to design efficient and scalable data models.</li>
-                            <li>Interface with mobile apps in a secure, HIPAA compliant manner.</li>
-                            <li>Improve system architectural design.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Collaboration and Communication:
-                        <ul>
-                            <li>Work with the development team and product manager on a daily basis to develop first-class
-                                product solutions.</li>
-                            <li>Communicate effectively with the product manager and other stakeholders to understand
-                                business requirements and translate them into technical solutions (and vice versa).</li>
-                            <li>Participate in code reviews, pair programming, and team meetings to share knowledge and best
-                                practices.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Creative problem solving:
-                        <ul>
-                            <li>Think critically to address complex problems, proposing innovative and practical solutions.
-                            </li>
-                            <li>Contribute to brainstorming sessions and provide technical insights into design discussions.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Diligence &amp; quality assurance:
-                        <ul>
-                            <li>Write clean, well-documented, and maintainable code with a focus on security, scalability,
-                                and performance.</li>
-                            <li>Continuously work to improve processes and suggest optimizations for better efficiency.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <!--Required attributes section-->
-                <h4 class="job_desc_h">Essential Qualifications</h4>
-                <ul>
-                    <li>5+ years of experience as a full stack developer</li>
-                    <li>Strong experience managing Linux servers</li>
-                    <li>Strong knowledge of frontend technologies (e.g., Angular)</li>
-                    <li>Proficiency in back-end frameworks (e.g., Node)</li>
-                    <li>Proficiency using database technologies (e.g., MySQL)</li>
-                    <li>Solid understanding of version control (Git)</li>
-                    <li>Experience with data security and privacy safeguards</li>
-                </ul>
-
-                <!--Preferrable attributes section-->
-                <h4 class="job_desc_h">Preferrable Skills</h4>
-                <ul>
-                    <li>Excellent problem-solving and communication skills, with an ability to articulate complex technical
-                        concepts to non-technical stakeholders</li>
-                    <li>Experience with data security and privacy safeguards</li>
-                    <li>Experience with containerization (e.g., Docker)</li>
-                    <li>Experience implementing DevOps practices</li>
-                    <li>Experience with automated testing frameworks</li>
-                    <li>Experience with CI/CD pipelines</li>
-                    <li>Experience developing within the Angular and Node frameworks</li>
-                </ul>
-
-                <p>If successful, please contact Hiring Manager: Mack Cropman, <a class="jobs_link"
-                        href="mailto:cropmanmack@gmail.com">cropmanmack@gmail.com</a></p>
-
-
-                <!--Link to apply.html-->
-                <a href="apply.html" class="jobs_link">Apply Now</a>
-            </section>
-
+        <!-- Main heading of jobs page-->
+        <div class="h1_jobs">
+            <h1 class="h1_jobs">Available Positions</h1>
         </div>
-    </main>
 
-    <footer id="foot">
-        <!-- Contact email -->
-        <p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
-        <!-- Jira link -->
-        <p>Link to Jira: <a hreflang="en" target="_blank" title="To the team's Jira project"
-                href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">CMAA
-                Jira</a></p>
-        <!-- GitHub link -->
-        <p>Link to GitHub: <a hreflang="en" target="_blank" title="To the team's GitHub repository"
-                href="https://github.com/Campbell-L/CMAA-Web-Tech-Project">CMAA GitHub</a></p>
-    </footer>
+        <!-- A container used to contian the sticky aside -->
+        <main>
+            <!-- Aside element used for quick naviagtion to available jobs-->
+            <aside id="jobs_aside">
+                <h2 class="aside_header">Quick Access for</h2>
+                <h2 class="aside_header">Current employment oppurtunities:</h2>
+                <ol id="aside_ol">
+                    <li> <a href="#network_admin" class="jobs_link">Network Adminsitrator</a></li>
+                    <li> <a href="#software_dev" class="jobs_link">Senior Full-Stack Software Developer</a></li>
+                </ol>
+            </aside>
+
+            <!--Job Position 1: Network Administrator-->
+            <div id="job_positions">
+                <section id="network_admin">
+                    <!--Hyperlink to resource for reference-->
+                    <!--https://www.linkedin.com/jobs/view/4187493257?trk=li_appcast_Global_careers_jobsgtm_a26fdb21-e6c8-4e30-ac01-94f999ffd388_job-dist&utm_medium=jobdist&mcid=6810586802156523523&utm_source=appcast&ePP=CwEAAAGV2WVT73GJbpFzAVikb1o6028yo9kpqiCAcfUzzf9HBWhQiCYjCQi-myZRffvvyzPoCgUoln-wSvmjUiqmKHB59_BlHa63FUPw5A&ccuid=60879276924-->
+
+                    <!--Specific Job information: Title, Ref No., Company, Location and Salary-->
+                    <h2>Network Adminstrator</h2>
+                    <h3> Reference Number: ATCM1</h3>
+                    <h3>AusTech Computing and Manufacturing</h3>
+                    <p>&#x1F4CD;On Site</p>
+                    <p>&#36;90k-100k yearly est.</p>
+
+                    <!--Job Description-->
+                    <h4 class="job_desc_h">Position Description</h4>
+                    <p>A Network Administator positon involves the configuration and handling of operational systems
+                        with
+                        various
+                        network infrastructure. <br>This role is responsible for managing on-premise tasks and
+                        contributing to a
+                        secure online enviroment. The Network Adminsitrator will also be in commuincation with various
+                        other
+                        positions or teams and lead collaboration in various technolgoical infrastcture projects.
+                        <br> You will report to the IT Operations Manager.
+                    </p>
+
+                    <!--List of key responsibilities for the position-->
+                    <h4 class="job_desc_h">Key Responsibilites</h4>
+                    <ul>
+                        <li>Network Management</li>
+                        <li>Security Responsibilites</li>
+                        <li>Maintaing Cloud infrastcture</li>
+                        <li>Documentation</li>
+                        <li>Troubleshooting</li>
+                    </ul>
+
+                    <!--Required attributes section-->
+                    <h4 class="job_desc_h">Essential Qualifications</h4>
+                    <ul>
+                        <li>5+ Years of experience in system adminsitrations fields with expertise in network
+                            infrastutrue and
+                            cloud
+                            services</li>
+                        <li>Proficient in Windows Sever enviroments</li>
+                        <li>Strong knowledge of virtualization technologies (Hyper-V).</li>
+                        <li>Experience with cloud platforms (AWS).</li>
+                        <li>Networking knowledge (TCP/IP, DNS, DHCP, VPN, VLANs, firewalls).</li>
+                        <li>Experience in scripting languages (e.g., PowerShell, Bash).</li>
+                        <li>Knowledge of IT security standards and best practices (e.g., firewalls, intrusion detection,
+                            encryption).</li>
+                    </ul>
+
+                    <!--Preferrable attributes section-->
+                    <h4 class="job_desc_h">Preferrable Skills</h4>
+                    <ul>
+                        <li>Excellent problem-solving skills</li>
+                        <li>Ability to manage various projects and tasks simultaneously</li>
+                        <li>Strong communication skills, including verbal and written</li>
+                        <li>Work proficientlly in a team enviroment</li>
+                        <li>Attention to detail</li>
+                        <li>Professional organisational skills</li>
+                    </ul>
+                    <p>If successful, please contact Hiring Manager: Mack Cropman, <a class="jobs_link"
+                            href="mailto:cropmanmack@gmail.com">cropmanmack@gmail.com</a></p>
+
+
+                    <!--Link to apply.html-->
+                    <a href="apply.html" class="jobs_link">Apply Now</a>
+                </section>
+
+                <!--Job Position 2-->
+                <section id="software_dev">
+                    <!--Hyperlink to resource for reference-->
+                    <!--https://www.linkedin.com/jobs/view/4187179429?trk=li_appcast_Global_careers_jobsgtm_fa4659c3-0501-447d-878b-e79b6bc5b4d0_job-dist&utm_medium=jobdist&mcid=6810586802156523522&utm_source=appcast&ePP=CwEAAAGV2WCLbjXDzSObNRuCVqBm6f4lUgGy34gLmQQJl2hSgo99F0-Ad_VgRbEbW2rMq8jvkrQk4W9f1l5hXe0GDSOZ7qHKZM79aO9nLg&ccuid=60907199002&original_referer=https%3A%2F%2Fclick.appcast.io%2F-->
+
+                    <!--Specific Job information: Title, Ref No., Company, Location and Salary-->
+                    <h2>Senior Full-Stack Software Developer</h2>
+                    <h3> Reference Number: ATCM2</h3>
+                    <h3>AusTech Computing and Manufacturing</h3>
+                    <p>&#x1F4CD;On Site or Remote</p>
+                    <p>&#36;80k-100k yearly</p>
+
+                    <!--Job Description-->
+                    <h4 class="job_desc_h">Position Description</h4>
+                    <p>As a Software Developer, you will manage the frontend and backend DANA framework which is our
+                        enviroment
+                        for our AusTech platform. In your role you will work closely with our Project Manager and a
+                        myriad of
+                        other development teams to create intuitive and engaing UI, as well as developing
+                        high-performance
+                        backend solutions.
+                        <br>You will report to the Technical Lead on your project progress.
+                    </p>
+
+                    <!--List of key responsibilities for the position-->
+                    <h4 class="job_desc_h">Key Responsibilites</h4>
+                    <ul>
+                        <li>Front-End:
+                            <ul>
+                                <li>Design and implement user-friendly web interfaces</li>
+                                <li>Create an engaging UI that facilitates a positive user experience</li>
+                                <li>Ensure the technical feasibility of UI designs, optimizing the user experience
+                                    across
+                                    different devices and browsers.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>Back-End:
+                            <ul>
+                                <li>Develop, test, and maintain Linux-based server-side logic and APIs using
+                                    technologies like
+                                    Node.</li>
+                                <li>Work with databases (MySQL) to design efficient and scalable data models.</li>
+                                <li>Interface with mobile apps in a secure, HIPAA compliant manner.</li>
+                                <li>Improve system architectural design.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>Collaboration and Communication:
+                            <ul>
+                                <li>Work with the development team and product manager on a daily basis to develop
+                                    first-class
+                                    product solutions.</li>
+                                <li>Communicate effectively with the product manager and other stakeholders to
+                                    understand
+                                    business requirements and translate them into technical solutions (and vice versa).
+                                </li>
+                                <li>Participate in code reviews, pair programming, and team meetings to share knowledge
+                                    and best
+                                    practices.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>Creative problem solving:
+                            <ul>
+                                <li>Think critically to address complex problems, proposing innovative and practical
+                                    solutions.
+                                </li>
+                                <li>Contribute to brainstorming sessions and provide technical insights into design
+                                    discussions.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>Diligence &amp; quality assurance:
+                            <ul>
+                                <li>Write clean, well-documented, and maintainable code with a focus on security,
+                                    scalability,
+                                    and performance.</li>
+                                <li>Continuously work to improve processes and suggest optimizations for better
+                                    efficiency.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!--Required attributes section-->
+                    <h4 class="job_desc_h">Essential Qualifications</h4>
+                    <ul>
+                        <li>5+ years of experience as a full stack developer</li>
+                        <li>Strong experience managing Linux servers</li>
+                        <li>Strong knowledge of frontend technologies (e.g., Angular)</li>
+                        <li>Proficiency in back-end frameworks (e.g., Node)</li>
+                        <li>Proficiency using database technologies (e.g., MySQL)</li>
+                        <li>Solid understanding of version control (Git)</li>
+                        <li>Experience with data security and privacy safeguards</li>
+                    </ul>
+
+                    <!--Preferrable attributes section-->
+                    <h4 class="job_desc_h">Preferrable Skills</h4>
+                    <ul>
+                        <li>Excellent problem-solving and communication skills, with an ability to articulate complex
+                            technical
+                            concepts to non-technical stakeholders</li>
+                        <li>Experience with data security and privacy safeguards</li>
+                        <li>Experience with containerization (e.g., Docker)</li>
+                        <li>Experience implementing DevOps practices</li>
+                        <li>Experience with automated testing frameworks</li>
+                        <li>Experience with CI/CD pipelines</li>
+                        <li>Experience developing within the Angular and Node frameworks</li>
+                    </ul>
+
+                    <p>If successful, please contact Hiring Manager: Mack Cropman, <a class="jobs_link"
+                            href="mailto:cropmanmack@gmail.com">cropmanmack@gmail.com</a></p>
+
+
+                    <!--Link to apply.html-->
+                    <a href="apply.html" class="jobs_link">Apply Now</a>
+                </section>
+
+            </div>
+        </main>
+
+        <footer id="foot">
+            <!-- Contact email -->
+            <p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
+            <!-- Jira link -->
+            <p>Link to Jira: <a hreflang="en" target="_blank" title="To the team's Jira project"
+                    href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">CMAA
+                    Jira</a></p>
+            <!-- GitHub link -->
+            <p>Link to GitHub: <a hreflang="en" target="_blank" title="To the team's GitHub repository"
+                    href="https://github.com/Campbell-L/CMAA-Web-Tech-Project">CMAA GitHub</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>
