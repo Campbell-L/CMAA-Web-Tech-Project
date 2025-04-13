@@ -137,12 +137,24 @@
 
                         <!-- Postcode -->
                         <!-- Postcode range is 0800 - 7799 from https://simple.wikipedia.org/wiki/Postcodes_in_Australia -->
-                        <!-- Regex pattern generated from https://3widgets.com/ Regex Numeric Range Generator -->
                         <!-- Matches exactly 4 digits in the range of 0800 to 7799 -->
+
+
+                        <!-- Hint messages (only one shows at a time) -->
+                        <div class="postcode-hint" id="vic-hint">Postcodes in VIC starts with 3XXX or 8XXX.</div>
+                        <div class="postcode-hint" id="nsw-hint">NSW postcodes have a range of 1000-1999, 2000-2599.
+                            2619-2899, and 2921-2999.
+                        </div>
+                        <div class="postcode-hint" id="qld-hint">QLD postcodes starts with 4XXX or 9XXX.</div>
+                        <div class="postcode-hint" id="nt-hint">NT postcodes starts with 08XX or 09XX.</div>
+                        <div class="postcode-hint" id="wa-hint">WA postcodes starts with 6XXX.</div>
+                        <div class="postcode-hint" id="sa-hint">SA postcodes starts with 5XXX.</div>
+                        <div class="postcode-hint" id="tas-hint">TAS postcodes start with 7XXX.</div>
+                        <div class="postcode-hint" id="act-hint">ACT postcodes have a range of 0200-0299, 2600-2618, and
+                            2900-2920</div>
                         <label for="postcode">Postcode:</label>
                         <input type="text" id="postcode" name="postcode" maxlength="4" required
-                            title="4 digits, valid postcode"
-                            pattern="^(080\d|08[1-9]\d|09\d{2}|[1-6]\d{3}|7[0-7]\d{2})$">
+                            title="4 digits, valid postcode" pattern="^(0[2-9]\d{2}|[1-7]\d{3}|8\d{3}|9\d{3})$">
                         <br>
 
                     </fieldset>

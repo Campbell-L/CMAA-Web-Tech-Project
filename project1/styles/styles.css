@@ -49,7 +49,7 @@ header {
 	z-index: 1000;
 }
 
-#main_header_content{
+#main_header_content {
 	padding: 0 1rem;
 }
 
@@ -441,7 +441,13 @@ section div {
 }
 
 #postcode {
-	width: 15%;
+	width: 20%;
+}
+
+small {
+	display: block;
+	font-size: 0.85em;
+	color: #555;
 }
 
 #phone {
@@ -519,6 +525,26 @@ fieldset {
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 1em;
+}
+
+/* postcode errors */
+.postcode-hint {
+	display: none;
+	font-size: 0.9em;
+	color: #666;
+	margin-top: 0.5em;
+}
+
+/* Show hint based on state selection */
+#state:has(option[value="VIC"]:checked)~#vic-hint,
+#state:has(option[value="NSW"]:checked)~#nsw-hint,
+#state:has(option[value="QLD"]:checked)~#qld-hint,
+#state:has(option[value="NT"]:checked)~#nt-hint,
+#state:has(option[value="WA"]:checked)~#wa-hint,
+#state:has(option[value="SA"]:checked)~#sa-hint,
+#state:has(option[value="TAS"]:checked)~#tas-hint,
+#state:has(option[value="ACT"]:checked)~#act-hint {
+	display: block;
 }
 
 
@@ -721,18 +747,18 @@ fieldset {
 	text-align: center;
 	font-weight: 600;
 	margin: 0;
-} 
+}
 
-.group-info-section dl dd{
+.group-info-section dl dd {
 	font-size: 50px;
 }
 
-.contribution-section dl dt{
+.contribution-section dl dt {
 	font-size: 20px;
 	font-weight: 500;
 }
 
-.contribution-section dl dd ul li{
+.contribution-section dl dd ul li {
 	list-style: circle;
 	margin: 0;
 	text-align: left;
@@ -750,11 +776,11 @@ fieldset {
 	font-weight: 800;
 }
 
-#student-ids dt{
+#student-ids dt {
 	font-weight: 500;
 }
 
-#student-ids dd{
+#student-ids dd {
 	font-style: italic;
 }
 
@@ -775,7 +801,8 @@ table caption {
 	font-style: italic;
 }
 
-th, td {
+th,
+td {
 	border: solid #074300 1px;
 	padding: 0.4rem;
 	transition: background-color 0.2s;
@@ -794,7 +821,8 @@ td:hover {
 	background-color: #ecffeb;
 }
 
-th, .name-cell {
+th,
+.name-cell {
 	font-weight: 500;
 }
 
@@ -807,19 +835,23 @@ thead {
 }
 
 /* nth-child selectors made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
-table tbody tr:nth-child(2n+1):nth-child(-n+3), table tbody tr:nth-child(2n+7):nth-child(-n+9){
+table tbody tr:nth-child(2n+1):nth-child(-n+3),
+table tbody tr:nth-child(2n+7):nth-child(-n+9) {
 	background-color: #e2e2e2;
 }
 
-table tbody tr:nth-child(2), table tbody tr:nth-child(8){
+table tbody tr:nth-child(2),
+table tbody tr:nth-child(8) {
 	background-color: #c4c4c4;
 }
 
-table tbody tr:nth-child(2n+4):nth-child(-n+6), table tbody tr:nth-child(2n+10):nth-child(-n+12){
+table tbody tr:nth-child(2n+4):nth-child(-n+6),
+table tbody tr:nth-child(2n+10):nth-child(-n+12) {
 	background-color: rgb(207, 255, 209);
 }
 
-table tbody tr:nth-child(5), table tbody tr:nth-child(11){
+table tbody tr:nth-child(5),
+table tbody tr:nth-child(11) {
 	background-color: rgb(155, 220, 158);
 }
 
@@ -829,7 +861,7 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 	justify-content: center;
 }
 
-#group-photo img{
+#group-photo img {
 	max-width: 70%;
 	min-width: 20%;
 	border: #227925 inset 0.7rem;
@@ -844,10 +876,11 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 @media screen and (min-width: 1200px) {
 
 	/* Change width of cells in "Group Info" so the class time can be on one line */
-	.group-info-section:first-of-type, .group-info-section:last-of-type {
+	.group-info-section:first-of-type,
+	.group-info-section:last-of-type {
 		width: 25%;
 	}
-	
+
 	.group-info-section:nth-of-type(2) {
 		width: 50%;
 	}
@@ -856,6 +889,7 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 /* When the screen is >1350px wide */
 /* 		Student ID aside should be floated to the right */
 @media screen and (min-width: 1350px) {
+
 	/* Default Student ID Aside Formatting for large screen */
 	#student-ids {
 		float: right;
@@ -863,19 +897,20 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 		padding: 0 4%;
 	}
 
-	#student-ids dd{
+	#student-ids dd {
 		padding-bottom: 1rem;
 	}
 
 	#about-article {
 		width: 60%;
 	}
-	
+
 }
 
 /* When the screen is <1350px wide */
 /* 		Student ID aside should become vertically aligned to make more room for the other content  */
 @media screen and (max-width:1350px) {
+
 	/* Student ID Aside Formatting for smaller screen */
 	#student-ids {
 		width: 60%;
@@ -884,7 +919,7 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 		text-align: center;
 	}
 
-	#student-ids dd{
+	#student-ids dd {
 		padding-bottom: 1rem;
 		margin: 0;
 	}
@@ -900,7 +935,7 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 /* When the screen is <900px wide */
 /* 		Horizontal grids should become vertical */
 @media screen and (max-width: 900px) {
-    .panel-holder {
+	.panel-holder {
 		flex-direction: column;
 		align-items: center;
 		gap: 0.1rem;
@@ -910,5 +945,5 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 		background-color: #ffffff;
 		width: 100%;
 	}
-	
+
 }
