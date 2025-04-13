@@ -686,7 +686,7 @@ fieldset {
 	padding-bottom: 2rem;
 }
 
-.page-title h2 {
+#about-article h2 {
 	text-align: center;
 	font-size: 3rem;
 	margin: 0;
@@ -694,13 +694,7 @@ fieldset {
 	font-weight: 800;
 }
 
-.page-title {
-	color: black;
-	padding: 1rem;
-	margin: 0;
-}
-
-.page-title p {
+#about-article p {
 	text-align: center;
 	font-style: italic;
 	font-weight: 100;
