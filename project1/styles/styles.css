@@ -431,7 +431,7 @@ h4.value_heading {
 
 /* styling for apply.html page */
 
-#apply-section div {
+#apply-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
