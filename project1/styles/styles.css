@@ -75,22 +75,25 @@ a:hover {
 
 /* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
 /* Navigation bar */
-nav {
+/* nav { */
+header {
 	height: 8em;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
+	padding: 0 1rem;
 }
 
-nav div {
+header div {
 	display: flex;
 	align-items: center;
 }
 
 /* Navigation title */
-nav h1 {
+header h1 {
 	padding-left: 1em;
+	font-size: 1.5rem;
 }
 
 #name {
@@ -107,11 +110,15 @@ nav h1 {
 }
 
 /* Navigation email button */
-nav a {
+header a {
 	font-weight: 100;
 }
 
-nav a.email {
+#righthand {
+	margin-right: 1rem;
+}
+
+#righthand a.email {
 	color: rgb(0, 0, 0);
 	background-color: #ffffff;
 	padding: 0.7em;
@@ -127,7 +134,7 @@ nav a.email {
 }
 
 /* Navigation email button on hover */
-nav a.email:hover {
+#righthand a.email:hover {
 	color: rgb(255, 255, 255);
 	background-color: #135d11;
 }
