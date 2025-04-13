@@ -49,9 +49,6 @@ header {
 	z-index: 1000;
 }
 
-hr {
-	margin-top: 0;
-}
 
 body {
 	margin: 0;
@@ -80,18 +77,14 @@ a:hover {
 /* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
 /* Navigation bar */
 /* nav { */
-header {
+header div {
 	height: 8em;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	padding: 0 1rem;
-}
-
-header div {
-	display: flex;
 	align-items: center;
+	padding: 0 1rem;
 }
 
 /* Navigation title */
