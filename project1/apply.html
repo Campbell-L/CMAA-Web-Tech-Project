@@ -49,7 +49,7 @@
     <main>
         <section>
             <div>
-                <h1 id="AppForm_h1">Application Form</h1>
+                <h2 id="AppForm_h1">Application Form</h2>
                 <p id="Instructions">Please fill out the form below to apply for the job position. <br> All fields are required unless otherwise specified.</p>
 
                 <form  id="applicationForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
@@ -59,7 +59,7 @@
                         <p>Please select valid option below</p>
                         <label for="job_ref">Job Reference Number:</label>
                         <select id="job_ref" name="job_ref" required>
-                            <option disabled selected>-- Please Select --</option>
+                            <option value="" disabled selected>-- Please Select --</option>
                             <option value="ATCM1">ATCM1</option>
                             <option value="ATCM2">ATCM2</option>
                         </select>
@@ -116,7 +116,7 @@
                         <!-- State -->
                         <label for="state">State:</label>
                         <select id="state" name="state" required>
-                            <option disabled selected>-- Please Select --</option>
+                            <option value="" disabled selected>-- Please Select --</option>
                             <option value="VIC">VIC</option>
                             <option value="NSW">NSW</option>
                             <option value="QLD">QLD</option>

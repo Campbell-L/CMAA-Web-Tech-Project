@@ -703,7 +703,6 @@ fieldset {
 
 .panel {
 	background-color: #ffffff;
-	padding: auto;
 	display: block;
 	width: 100%;
 }
@@ -911,7 +910,6 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 
 	.panel {
 		background-color: #ffffff;
-		padding: auto;
 		width: 100%;
 	}
 
