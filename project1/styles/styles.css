@@ -431,7 +431,7 @@ h4.value_heading {
 
 /* styling for apply.html page */
 
-section div {
+#apply-section div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -695,7 +695,6 @@ fieldset {
 }
 
 .page-title {
-	/* background: linear-gradient(to bottom, #329f2c, #227925); */
 	color: black;
 	padding: 1rem;
 	margin: 0;
@@ -714,6 +713,8 @@ fieldset {
 	font-size: 25px;
 	font-weight: 600;
 }
+
+
 
 .body-section:nth-of-type(n+2) h3 {
 	margin-top: 7rem;
