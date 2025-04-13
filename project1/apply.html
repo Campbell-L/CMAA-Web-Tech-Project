@@ -131,9 +131,12 @@
                         <br>
 
                         <!-- Postcode -->
+						<!-- Postcode range is 0800 - 7799 from https://simple.wikipedia.org/wiki/Postcodes_in_Australia -->
+						<!-- Regex pattern generated from https://3widgets.com/ Regex Numeric Range Generator -->
+						<!-- Matches exactly 4 digits in the range of 0800 to 7799 -->
                         <label for="postcode">Postcode:</label>
-                        <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" required
-                            title="4 digits">
+                        <input type="text" id="postcode" name="postcode" maxlength="4" required
+                            title="4 digits, valid postcode" pattern="^(080\d|08[1-9]\d|09\d{2}|[1-6]\d{3}|7[0-7]\d{2})$">
                         <br>
 
                     </fieldset>
@@ -195,7 +198,6 @@
         </section>
     </main>
 
-    <hr>
     <footer id="foot">
         <!-- Contact email -->
         <p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
