@@ -364,6 +364,7 @@ h4.value_heading {
 	background-color: #224e2c;
 	padding: 2em;
 	color: #ffffff;
+	text-align: center;
 }
 
 /* Footer link stlying */
@@ -550,7 +551,7 @@ fieldset {
 /* Main header styling */
 .h1_jobs {
 	text-align: center;
-	font-size: 1.5em;
+	font: 1.5em "Figtree", "Trebuchet MS";
 	font-weight: 800;
 }
 
@@ -818,7 +819,6 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 
 /* Group Image Styling */
 #group-photo {
-	float: right;
 	display: flex;
 	justify-content: center;
 }
@@ -893,7 +893,6 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 /* SMALL SCREEN */
 /* When the screen is <900px wide */
 /* 		Horizontal grids should become vertical */
-/* 		Table expands to fill more space and be more readable */
 @media screen and (max-width: 900px) {
     .panel-holder {
 		flex-direction: column;
@@ -904,10 +903,6 @@ table tbody tr:nth-child(5), table tbody tr:nth-child(11){
 	.panel {
 		background-color: #ffffff;
 		width: 100%;
-	}
-
-	#group-photo {
-		float: none;
 	}
 	
 }
