@@ -47,6 +47,7 @@ header {
 	background-repeat: repeat-x;
 	width: 100%;
 	z-index: 1000;
+	padding: 0 1rem;
 }
 
 
@@ -84,7 +85,6 @@ header div {
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
-	padding: 0 1rem;
 }
 
 /* Navigation title */
@@ -212,6 +212,7 @@ header a {
 	}
 
 	#page_menu {
+		transition: 1s;
 		margin-right: 2em;
 	}
 
