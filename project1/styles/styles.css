@@ -372,6 +372,16 @@ h4.value_heading {
 }
 
 /* Adaptive home page content */
+/* Make footer stick to the bottom of the page at larger screen sizes */
+@media screen and (min-height: 1200px) {
+	#foot {
+		bottom: 0;
+		position: fixed;
+		width: 100%;
+	}
+}
+
+/* Make value boxes go vertical at smaller screen sizes */
 @media screen and (max-width: 600px) {
 	#value_boxes {
 		display: flex;
