@@ -47,6 +47,9 @@ header {
 	background-repeat: repeat-x;
 	width: 100%;
 	z-index: 1000;
+}
+
+#main_header_content{
 	padding: 0 1rem;
 }
 
@@ -562,7 +565,7 @@ fieldset {
 }
 
 .jobs_link:hover {
-	color: mediumseagreen;
+	color: rgb(60, 179, 86);
 	text-decoration: underline;
 }
 
@@ -571,14 +574,14 @@ fieldset {
 #jobs_aside {
 	width: 25%;
 	float: right;
-	border: 8px double mediumseagreen;
+	border: 8px double rgb(60, 179, 76);
 	border-radius: 10px;
 	margin: 1em;
 	padding: 2em;
 	position: sticky;
 	top: 150px;
 	margin-left: -10px;
-	box-shadow: 5px 10px mediumseagreen;
+	box-shadow: 5px 10px rgb(60, 179, 76);
 	margin-bottom: 25px;
 }
 
@@ -602,13 +605,13 @@ fieldset {
 /* This id section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
 #network_admin,
 #software_dev {
-	border: 8px double mediumseagreen;
+	border: 8px double rgb(60, 179, 76);
 	border-radius: 10px;
 	margin: 1em;
 	padding: 1em;
 	width: 80%;
 	scroll-margin-top: 150px;
-	background-color: rgb(233, 251, 241)
+	background-color: rgb(240, 250, 242)
 }
 
 /* Sub header styling in job descriptions*/
