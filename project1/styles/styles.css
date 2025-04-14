@@ -579,7 +579,7 @@ fieldset {
 
 /* Jobs.html page styling */
 
-/* Main header styling */
+/* Main headeing of jobs page styling */
 .h1_jobs {
 	text-align: center;
 	font: 1.5em "Figtree", "Trebuchet MS";
@@ -630,6 +630,7 @@ fieldset {
 }
 
 /* This id section uses Week 05: Lab exercise as a reference: https://swinburne.instructure.com/courses/64638/pages/week-05-lab-exercise-2-percent-change-the-layout-of-the-html-with-css?module_item_id=4971090*/
+/* Additional job listings styles */
 #network_admin,
 #software_dev {
 	border: 8px double rgb(60, 179, 76);
@@ -646,7 +647,7 @@ fieldset {
 	font-weight: bold;
 }
 
-/* Styles for jobs page adaptive to phone */
+/* Styles for jobs page that is adaptive phone screen size (768px) */
 @media screen and (max-width: 768px) {
 
 	.h1_jobs {
