@@ -2,229 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Mack Cropman">
-    <meta name="description" content="Application form for job position">
-    <meta name="keywords" content="form, application, job, position, apply, submit">
-    <title>Apply</title>
-
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Author" content="Mack Cropman">
+	<meta name="description" content="Application form for job position">
+	<meta name="keywords" content="form, application, job, position, apply, submit">
+	<title>Apply</title>
+	<!-- links -->
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
-    <header id="head">
-        <!-- Navigation bar -->
-        <div id="main-header-content">
-            <div id="lefthand">
-                <div id="logo_title">
-                    <!-- Company logo -->
-                    <a href="index.html" title="Homepage"><img id="logo" alt="ATCM logo" title="ATCM: to Homepage"
-                            src="images/temp_logo.png"></a>
-                    <h1 id="short_name">ATCM</h1>
-                </div>
-                <!-- Company Name -->
-                <h1 id="name">Austech Computing and Manufacturing</h1>
-                <!-- Menu links -->
-                <nav id="page_menu">
-                    <label id="hamburger">Pages&#9662;</label>
-                    <ul id="menu_list">
-                        <li><a title="Home Page" href="index.html">Home</a></li>
-                        <li><a title="Job Desription Page" href="jobs.html">Jobs</a></li>
-                        <li><a title="Appliation Page" href="apply.html" id="active">Apply</a></li>
-                        <li><a title="About Page" href="about.html">About</a></li>
-                    </ul>
-                </nav>
-            </div>
+	<header id="head">
+		<!-- Navigation bar -->
+		<div id="main-header-content">
+			<div id="lefthand">
+				<div id="logo_title">
+					<!-- Company logo -->
+					<a href="index.html" title="Homepage"><img id="logo" alt="ATCM logo" title="ATCM: to Homepage"
+							src="images/temp_logo.png" loading="lazy"></a>
+					<h1 id="short_name">ATCM</h1>
+				</div>
+				<!-- Company Name -->
+				<h1 id="name">Austech Computing and Manufacturing</h1>
+				<!-- Menu links -->
+				<nav id="page_menu">
+					<label id="hamburger">Pages&#9662;</label>
+					<ul id="menu_list">
+						<li><a title="Home Page" href="index.html">Home</a></li>
+						<li><a title="Job Desription Page" href="jobs.html">Jobs</a></li>
+						<li><a title="Appliation Page" href="apply.html" id="active">Apply</a></li>
+						<li><a title="About Page" href="about.html">About</a></li>
+					</ul>
+				</nav>
+			</div>
 
-            <div id="righthand">
-                <!-- Email link -->
-                <a class="email" id="small_email" title="Email for further infomation"
-                    href="mailto:info@austechcm.com.au">&#128386;</a>
-                <a class="email" id="large_email" title="Email for further infomation"
-                    href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
-            </div>
-        </div>
-        <hr>
-    </header>
+			<div id="righthand">
+				<!-- Email link -->
+				<a class="email" id="small_email" title="Email for further infomation"
+					href="mailto:info@austechcm.com.au">&#128386;</a>
+				<a class="email" id="large_email" title="Email for further infomation"
+					href="mailto:info@austechcm.com.au">info@ATCM.com.au</a>
+			</div>
+		</div>
+		<hr>
+	</header>
 
-    <main>
-        <section id="apply-section">
-                <h2 id="AppForm_h1">Application Form</h2>
-                <p id="Instructions">Please fill out the form below to apply for the job position. <br> All fields are
-                    required unless otherwise specified.</p>
+	<main>
+		<section id="apply-section">
+			<h2 id="AppForm_h1">Application Form</h2>
+			<p id="Instructions">Please fill out the form below to apply for the job position. <br> All fields are
+				required unless otherwise specified.</p>
 
-                <form id="applicationForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-                    <fieldset>
-                        <legend>Job Details</legend>
-                        <!-- Job Title -->
-                        <p>Please select valid option below</p>
-                        <label for="job_ref">Job Reference Number:</label>
-                        <select id="job_ref" name="job_ref" required>
-                            <option value="" disabled selected>-- Please Select --</option>
-                            <option value="ATCM1">ATCM1</option>
-                            <option value="ATCM2">ATCM2</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Personal Details</legend>
-                        <!-- First Name -->
-                        <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]{1,20}" maxlength="20"
-                            required title="Max 20 alphabetic characters">
-                        <br><br>
+			<form id="applicationForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+				<fieldset>
+					<!-- Job Reference number -->
+					<legend>Job Details</legend>
+					<p>Please select valid option below</p>
+					<label for="job_ref">Job Reference Number:</label>
+					<select id="job_ref" name="job_ref" required>
+						<option value="" disabled selected>-- Please Select --</option>
+						<option value="ATCM1">ATCM1</option>
+						<option value="ATCM2">ATCM2</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Personal Details</legend>
+					<!-- First Name -->
+					<label for="first_name">First Name:</label>
+					<input type="text" id="first_name" name="first_name" pattern="[A-Za-z]{1,20}" maxlength="20"
+						required title="Max 20 alphabetic characters">
+					<br><br>
 
-                        <!-- Last Name -->
-                        <label for="last_name">Last Name:</label>
-                        <input type="text" id="last_name" name="last_name" pattern="[A-Za-z]{1,20}" maxlength="20"
-                            required title="Max 20 alphabetic characters">
-                        <br><br>
+					<!-- Last Name -->
+					<label for="last_name">Last Name:</label>
+					<input type="text" id="last_name" name="last_name" pattern="[A-Za-z]{1,20}" maxlength="20" required
+						title="Max 20 alphabetic characters">
+					<br><br>
 
-                        <!-- Date of Birth -->
-                        <label for="dob">Date of Birth:</label>
-                        <input type="date" id="dob" max="2007-12-31" name="dob" required title="DD-MM-YYYY">
-                        <br><br>
-                        <fieldset id="Gender">
-                            <legend>Gender:</legend>
-                            <label><input type="radio" name="gender" value="Male" required> Male</label>
-                            <label><input type="radio" name="gender" value="Female"> Female</label>
-                            <label><input type="radio" name="gender" value="Other"> Other</label>
-                        </fieldset>
+					<!-- Date of Birth -->
+					<label for="dob">Date of Birth:</label>
+					<input type="date" id="dob" max="2007-12-31" name="dob" required title="DD-MM-YYYY">
+					<br><br>
+					<!-- Gender selection radio buttons-->
+					<fieldset id="Gender">
+						<legend>Gender:</legend>
+						<label><input type="radio" name="gender" value="Male" required> Male</label>
+						<label><input type="radio" name="gender" value="Female"> Female</label>
+						<label><input type="radio" name="gender" value="Other"> Other</label>
+					</fieldset>
 
-                        <!-- Phone Number -->
-                        <label for="phone">Phone Number:</label>
-                        <input type="text" id="phone" name="phone" pattern="[0-9 ]{8,12}" maxlength="12" required
-                            title="8 to 12 digits"><br>
+					<!-- Phone Number -->
+					<label for="phone">Phone Number:</label>
+					<input type="text" id="phone" name="phone" pattern="[0-9 ]{8,12}" maxlength="12" required
+						title="8 to 12 digits"><br>
 
-                        <!-- Email Address -->
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required maxlength="50"
-                            title="must be a valid email address">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Address</legend>
-                        <!-- Street Address -->
-                        <label for="street_address">Street Address:</label>
-                        <input type="text" id="street_address" name="street_address" maxlength="40" required 
-                        pattern="^\d+.+[a-zA-z]+$"
-                        title="Must be a valid street address. E.g. 123 Main St, 456 Elm Road, etc.">
+					<!-- Email Address -->
+					<label for="email">Email Address:</label>
+					<input type="email" id="email" name="email" required maxlength="50"
+						title="must be a valid email address">
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Address</legend>
+					<!-- Street Address -->
+					<label for="street_address">Street Address:</label>
+					<input type="text" id="street_address" name="street_address" maxlength="40" required
+						pattern="^\d+.+[a-zA-z]+$"
+						title="Must be a valid street address. E.g. 123 Main St, 456 Elm Road, etc.">
 
-                        <br>
+					<br>
 
-                        <!-- Suburb/Town -->
-                        <label for="suburb_town">Suburb/Town:</label>
-                        <input type="text" id="suburb_town" name="suburb_town" maxlength="40" pattern="[A-Za-z ]{1,40}"
-                            required title="Max 40 alphabetic characters">
-                        <br>
+					<!-- Suburb/Town -->
+					<label for="suburb_town">Suburb/Town:</label>
+					<input type="text" id="suburb_town" name="suburb_town" maxlength="40" pattern="[A-Za-z ]{1,40}"
+						required title="Max 40 alphabetic characters">
+					<br>
 
-                        <!-- State -->
-                        <label for="state">State:</label>
-                        <select id="state" name="state" required>
-                            <option value="" disabled selected>-- Please Select --</option>
-                            <option value="VIC">VIC</option>
-                            <option value="NSW">NSW</option>
-                            <option value="QLD">QLD</option>
-                            <option value="NT">NT</option>
-                            <option value="WA">WA</option>
-                            <option value="SA">SA</option>
-                            <option value="TAS">TAS</option>
-                            <option value="ACT">ACT</option>
-                        </select>
-                        <br>
+					<!-- State selection dropdown -->
+					<label for="state">State:</label>
+					<select id="state" name="state" required>
+						<option value="" disabled selected>-- Please Select --</option>
+						<option value="VIC">VIC</option>
+						<option value="NSW">NSW</option>
+						<option value="QLD">QLD</option>
+						<option value="NT">NT</option>
+						<option value="WA">WA</option>
+						<option value="SA">SA</option>
+						<option value="TAS">TAS</option>
+						<option value="ACT">ACT</option>
+					</select>
+					<br>
 
-                        <!-- Postcode -->
-                        <!-- Postcode range is 0800 - 7799 from https://simple.wikipedia.org/wiki/Postcodes_in_Australia -->
-                        <!-- Matches exactly 4 digits in the range of 0800 to 7799 -->
+					<!-- Postcode -->
+					<!-- Postcode range is 0800 - 7799 from https://simple.wikipedia.org/wiki/Postcodes_in_Australia -->
+					<!-- Matches exactly 4 digits in the range of 0800 to 7799 -->
 
 
-                        <!-- Hint messages (only one shows at a time) -->
-                        <div class="postcode-hint" id="vic-hint">Postcodes in VIC starts with 3XXX or 8XXX.</div>
-                        <div class="postcode-hint" id="nsw-hint">NSW postcodes have a range of 1000-1999, 2000-2599.
-                            2619-2899, and 2921-2999.
-                        </div>
-                        <div class="postcode-hint" id="qld-hint">QLD postcodes starts with 4XXX or 9XXX.</div>
-                        <div class="postcode-hint" id="nt-hint">NT postcodes starts with 08XX or 09XX.</div>
-                        <div class="postcode-hint" id="wa-hint">WA postcodes starts with 6XXX.</div>
-                        <div class="postcode-hint" id="sa-hint">SA postcodes starts with 5XXX.</div>
-                        <div class="postcode-hint" id="tas-hint">TAS postcodes start with 7XXX.</div>
-                        <div class="postcode-hint" id="act-hint">ACT postcodes have a range of 0200-0299, 2600-2618, and
-                            2900-2920</div>
-                        <label for="postcode">Postcode:</label>
-                        <input type="text" id="postcode" name="postcode" maxlength="4" required
-                            title="4 digits, valid postcode" pattern="^(0[2-9]\d{2}|[1-7]\d{3}|8\d{3}|9\d{3})$">
-                        <br>
+					<!-- Hint messages (only one shows at a time) -->
+					<div class="postcode-hint" id="vic-hint">Postcodes in VIC starts with 3XXX or 8XXX.</div>
+					<div class="postcode-hint" id="nsw-hint">NSW postcodes have a range of 1000-1999, 2000-2599.
+						2619-2899, and 2921-2999.
+					</div>
+					<div class="postcode-hint" id="qld-hint">QLD postcodes starts with 4XXX or 9XXX.</div>
+					<div class="postcode-hint" id="nt-hint">NT postcodes starts with 08XX or 09XX.</div>
+					<div class="postcode-hint" id="wa-hint">WA postcodes starts with 6XXX.</div>
+					<div class="postcode-hint" id="sa-hint">SA postcodes starts with 5XXX.</div>
+					<div class="postcode-hint" id="tas-hint">TAS postcodes start with 7XXX.</div>
+					<div class="postcode-hint" id="act-hint">ACT postcodes have a range of 0200-0299, 2600-2618, and
+						2900-2920</div>
+					<label for="postcode">Postcode:</label>
+					<input type="text" id="postcode" name="postcode" maxlength="4" required
+						title="4 digits, valid postcode" pattern="^(0[2-9]\d{2}|[1-7]\d{3}|8\d{3}|9\d{3})$">
+					<br>
 
-                    </fieldset>
+				</fieldset>
 
-                    <!-- Skills -->
-                    <fieldset id="Skills-group">
-                        <legend>Skills:</legend>
-                        <label>
-                            <input type="checkbox" id="skill1" name="skills[]" value="Excellent problem-solving skills">
-                            Excellent problem-solving skills
-                        </label>
-                        <br>
-                        <label>
-                            <input type="checkbox" id="skill2" name="skills[]"
-                                value="Ability to manage various projects and tasks simultaneously"> Ability to manage
-                            various projects and tasks simultaneously
-                        </label>
-                        <br>
-                        <label>
-                            <input type="checkbox" id="skill3" name="skills[]"
-                                value="Strong communication skills, including verbal and written"> Strong communication
-                            skills, including verbal and written
-                        </label>
-                        <br>
-                        <label>
-                            <input type="checkbox" id="skill4" name="skills[]"
-                                value="Work proficientlly in a team envirnoment"> Work proficientlly in a team
-                            environment
-                        </label>
-                        <br>
-                        <label>
-                            <input type="checkbox" id="skill5" name="skills[]" value="Attention to detail"> Attention to
-                            detail
-                        </label>
-                        <br>
-                        <label>
-                            <input type="checkbox" id="skill6" name="skills[]"
-                                value="Professional organisational skills">
-                            Professional organisational skills
-                        </label>
-                        <br>
-                        <input type="checkbox" id="other_skills" name="skills[]" value="Other">
-                        <label for="other_skills">Other skills:</label>
-                        <label for="other_skills_text">select to open</label>
-                        <textarea id="other_skills_text" name="other_skills_text" rows="4" cols="50"
-                            placeholder="Please describe your other skills here if applicable."></textarea>
+				<!-- Skills -->
+				<fieldset id="Skills-group">
+					<legend>Skills:</legend>
+					<label>
+						<input type="checkbox" id="skill1" name="skills[]" value="Excellent problem-solving skills">
+						Excellent problem-solving skills
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" id="skill2" name="skills[]"
+							value="Ability to manage various projects and tasks simultaneously"> Ability to manage
+						various projects and tasks simultaneously
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" id="skill3" name="skills[]"
+							value="Strong communication skills, including verbal and written"> Strong communication
+						skills, including verbal and written
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" id="skill4" name="skills[]"
+							value="Work proficientlly in a team envirnoment"> Work proficientlly in a team
+						environment
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" id="skill5" name="skills[]" value="Attention to detail"> Attention to
+						detail
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" id="skill6" name="skills[]" value="Professional organisational skills">
+						Professional organisational skills
+					</label>
+					<br>
+					<!-- Other skills textarea-->
+					<input type="checkbox" id="other_skills" name="skills[]" value="Other">
+					<label for="other_skills">Other skills:</label>
+					<label for="other_skills_text">select to open</label>
+					<textarea id="other_skills_text" name="other_skills_text" rows="4" cols="50"
+						placeholder="Please describe your other skills here if applicable."></textarea>
 
-                    </fieldset>
-                    <br>
-                    <div id="button-container">
-                        <button class="FormButton" type="submit">Submit Application</button>
-                        <button class="FormButton" type="reset">Reset</button>
-                        <button class="FormButton" type="button"
-                            onclick="window.location.href='index.html'">Cancel</button>
-                    </div>
-                </form>
+				</fieldset>
+				<br>
+				<!-- submission -->
+				<div id="button-container">
+					<button class="FormButton" type="submit">Submit Application</button>
+					<button class="FormButton" type="reset">Reset</button>
+					<button class="FormButton" type="button" onclick="window.location.href='index.html'">Cancel</button>
+				</div>
+			</form>
 
-        </section>
-    </main>
+		</section>
+	</main>
 
-    <footer id="foot">
-        <!-- Contact email -->
-        <p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
-        <!-- Jira link -->
-        <p>Link to Jira: <a hreflang="en" target="_blank" title="To the team's Jira project"
-                href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">CMAA
-                Jira</a></p>
-        <!-- GitHub link -->
-        <p>Link to GitHub: <a hreflang="en" target="_blank" title="To the team's GitHub repository"
-                href="https://github.com/Campbell-L/CMAA-Web-Tech-Project">CMAA GitHub</a></p>
-    </footer>
+	<footer id="foot">
+		<!-- Contact email -->
+		<p>Contact us: <a class="email" href="mailto:contact@austechcm.com.au">contact@atcm.com.au</a></p>
+		<!-- Jira link -->
+		<p>Link to Jira: <a hreflang="en" target="_blank" title="To the team's Jira project"
+				href="https://cmaa8623.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiY2U0MjgyYWYzYzI4NDhjMGJmNmFlNDEzZjY5OWJhNDIiLCJwIjoiaiJ9">CMAA
+				Jira</a></p>
+		<!-- GitHub link -->
+		<p>Link to GitHub: <a hreflang="en" target="_blank" title="To the team's GitHub repository"
+				href="https://github.com/Campbell-L/CMAA-Web-Tech-Project">CMAA GitHub</a></p>
+	</footer>
 
 </body>
 
