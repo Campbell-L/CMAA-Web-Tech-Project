@@ -2,7 +2,7 @@
 filename: Page Styles
 authors: Asha Burdack, Mack Cropman, Aaron Dimovski, Campbell Leishman
 created: 2/04/2025
-last modified: 12/04/2025
+last modified: 14/04/2025
 description: Styles are applied to all pages
 */
 
@@ -23,7 +23,7 @@ description: Styles are applied to all pages
 	max-width: 100%;
 }
 
-/* Heading size */
+/* Site-wide header font-width settings */
 h1 {
 	font-weight: 700;
 }
@@ -80,7 +80,6 @@ a:hover {
 
 /* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
 /* Navigation bar */
-/* nav { */
 header div {
 	height: 8em;
 	list-style-type: none;
@@ -536,6 +535,8 @@ fieldset {
 }
 
 /* Show hint based on state selection */
+/* Syntax found from https://developer.mozilla.org/en-US/docs/Web/CSS/:has */
+/* '~' from user VAhid: https://stackoverflow.com/questions/12574668/change-color-of-sibling-elements-on-hover-using-css */
 #state:has(option[value="VIC"]:checked)~#vic-hint,
 #state:has(option[value="NSW"]:checked)~#nsw-hint,
 #state:has(option[value="QLD"]:checked)~#qld-hint,
@@ -708,13 +709,11 @@ fieldset {
 	font-weight: 600;
 }
 
-
-
 .body-section:nth-of-type(n+2) h3 {
 	margin-top: 7rem;
 }
 
-
+/* Reusable styling for the panels on the about page (group info & contributions) */
 .panel-holder {
 	background-color: rgb(0, 110, 16);
 	display: flex;
@@ -779,13 +778,13 @@ fieldset {
 	font-style: italic;
 }
 
-/* ID and Interests section */
+/* Interests table section */
 #individual-info-list {
 	display: flex;
 	justify-content: center;
 }
 
-/* Table styles */
+/* Table styling for the about page */
 table {
 	width: 90%;
 	border-collapse: collapse;
@@ -830,6 +829,7 @@ thead {
 }
 
 /* nth-child selectors made with help from https://developer.chrome.com/docs/css-ui/css-nth-child-of-s */
+/* Used to procedurally colour the rows in the table on the about page */
 table tbody tr:nth-child(2n+1):nth-child(-n+3),
 table tbody tr:nth-child(2n+7):nth-child(-n+9) {
 	background-color: #e2e2e2;
