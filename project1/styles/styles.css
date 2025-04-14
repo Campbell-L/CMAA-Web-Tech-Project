@@ -9,8 +9,8 @@ description: Styles are applied to all pages
 /* Imports fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* All pages general styling */
-
+/* ALL pages general styling */
+/* Fonts */
 * {
 	font-family: "Figtree", 'Trebuchet MS', sans-serif;
 	font-weight: 200;
@@ -36,8 +36,35 @@ h3 {
 	font-weight: 500;
 }
 
+/* Remove default margin from body*/
+body {
+	margin: 0;
+}
 
+/* Horizontal line color */
+hr {
+	color: #36761f;
+	border-style: solid;
+}
+
+/* Anchor styling */
+a {
+	text-decoration: none;
+	font-weight: 500;
+	color: rgb(20, 120, 0);
+	/* Animation for anchor hover */
+	transition: all 0.2s;
+}
+
+/* Anchor on hover */
+a:hover {
+	text-decoration: none;
+	color: rgb(30, 68, 23);
+}
+
+/* Header Styling */
 header {
+	/* Header follows user */
 	position: sticky;
 	top: 0;
 	/* Image sourced from: https://www.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_386291308.htm#fromView=keyword&page=1&position=35&uuid=8dd9241e-27c6-436d-986f-3293c9a2abc0&query=Background+Pattern */
@@ -49,53 +76,31 @@ header {
 	z-index: 1000;
 }
 
-#main_header_content {
-	padding: 0 1rem;
-}
-
-
-body {
-	margin: 0;
-}
-
-/* Horizontal bar line */
-hr {
-	color: #36761f;
-	border-style: solid;
-}
-
-/* Anchor styling */
-a {
-	text-decoration: none;
-	font-weight: 500;
-	color: rgb(20, 120, 0);
-	/* Animation for link hover */
-	transition: all 0.2s;
-}
-
-a:hover {
-	text-decoration: none;
-	color: rgb(30, 68, 23);
+header a {
+	/*Bolder header links*/
+	font-weight: 100;
 }
 
 /* The navigation bar uses this canvas module for refrence:https://swinburne.instructure.com/courses/64638/pages/week-04-css-basics-2?module_item_id=4968756  */
-/* Navigation bar */
+/* Navigation bar styling */
 header div {
 	height: 8em;
+	/* Removes styling on lists */
 	list-style-type: none;
+	/* Flexbox seperates the left and right hand grouped elements and aligns them in the center */
 	display: flex;
 	justify-content: space-between;
-	align-content: center;
 	align-items: center;
 }
 
-/* Navigation title */
+/* Company name styling */
 header h1 {
 	padding-left: 1em;
 	font-size: 1.5rem;
 }
 
 #name {
+	/* Keeps the long version of the company name stacked in three lines */
 	max-width: 200px;
 }
 
@@ -103,25 +108,12 @@ header h1 {
 	display: none;
 }
 
-#left_side {
-	display: flex;
-
-}
-
-/* Navigation email button */
-header a {
-	font-weight: 100;
-}
-
-#righthand {
-	margin-right: 1rem;
-}
-
+/* Styling for the email buttons */
 #righthand a.email {
 	color: rgb(0, 0, 0);
 	background-color: #ffffff;
 	padding: 0.7em;
-	margin-right: 1em;
+	margin-right: 2em;
 	border: 2px solid rgb(0, 110, 16);
 }
 
@@ -132,17 +124,28 @@ header a {
 	font-family: sans-serif;
 }
 
-/* Navigation email button on hover */
+/* Email on hover */
 #righthand a.email:hover {
 	color: rgb(255, 255, 255);
 	background-color: #135d11;
 }
 
-/* Navigation menu buttons */
+/* Dropdown label */
 #hamburger {
 	display: none;
+	width: 5em;
+	text-align: center;
+	bottom: 34%;
+	position: absolute;
+	font-size: 1.5em;
+	padding: 0.5em;
+	padding-left: 0em;
+	padding-right: 0em;
+	color: white;
+	background-color: rgb(105, 182, 54);
 }
 
+/* Navigation menu buttons */
 #page_menu ul {
 	display: flex;
 	justify-content: space-around;
@@ -150,6 +153,7 @@ header a {
 
 #page_menu ul li {
 	font-size: large;
+	/* Makes list of navigation links horizontal */
 	display: inline;
 }
 
@@ -162,11 +166,13 @@ header a {
 	width: 100%;
 }
 
+/* Indicates the active page */
 #page_menu ul li a#active {
 	background-color: rgba(17, 100, 8, 0.781);
 	border: rgb(31, 61, 32) solid 2px;
 }
 
+/* Navigation buttons on hover */
 #page_menu ul li a:hover {
 	color: rgb(55, 77, 55);
 }
@@ -176,6 +182,8 @@ header a {
 }
 
 /* Adaptive header and navigation bar */
+/* When the screen is <1006px wide */
+/* 		Email button compacts */
 @media screen and (max-width: 1006px) {
 	#large_email {
 		display: none;
@@ -187,6 +195,9 @@ header a {
 
 }
 
+/* When the screen is <884px wide */
+/* 		Company name and logo compacts */
+/* 		Menu stays to the right */
 @media screen and (max-width: 884px) {
 	#name {
 		display: none;
@@ -221,6 +232,8 @@ header a {
 
 }
 
+/* When the screen is <611px wide */
+/* 		Menu stacks and becomes a dropdown */
 @media screen and (max-width: 611px) {
 	#page_menu ul li {
 		width: 100%;
@@ -255,17 +268,7 @@ header a {
 	}
 
 	#hamburger {
-		width: 5em;
-		text-align: center;
-		bottom: 34%;
-		position: absolute;
 		display: block;
-		font-size: 1.5em;
-		padding: 0.5em;
-		padding-left: 0em;
-		padding-right: 0em;
-		color: white;
-		background-color: rgb(105, 182, 54);
 	}
 
 	#hamburger:hover+#menu_list,
@@ -280,6 +283,8 @@ header a {
 	}
 }
 
+/* When the screen is <400px wide */
+/* 		Reduces the size of dropdown menu */
 @media screen and (max-width: 400px) {
 	#page_menu ul {
 		max-width: 6.75em;
@@ -297,7 +302,7 @@ header a {
 	}
 }
 
-/* Home page content styling */
+/* Home page background */
 #home_page {
 	/* https://www.freepik.com/free-vector/geometric-background-green-tones_6195968.htm#fromView=keyword&page=1&position=0&uuid=3e5abae6-39ee-4183-8de1-a7326c720b90&query=Green+Geometric+Pattern */
 	background-image: url('images/homepage_background.jpg');
@@ -305,6 +310,24 @@ header a {
 	background-size: contain;
 }
 
+/* Homepage content styling */
+#main_home {
+	background-color: #fff;
+	margin: 3%;
+	padding: 1em;
+	border: 2px solid green;
+	border-radius: 10px;
+}
+
+/* Topic boxes styling */
+#values,
+#benefits,
+#who_are_we,
+#introduction {
+	padding: 1em;
+}
+
+/* Introduction styling */
 #home_page_title {
 	margin: 2%;
 	font-size: 3em;
@@ -314,18 +337,6 @@ header a {
 #slogan {
 	text-align: center;
 	margin: 1%;
-}
-
-#main_home {
-	background-color: #fff;
-	margin: 3%;
-	padding: 1em;
-	border: 2px solid green;
-	border-radius: 10px;
-}
-
-section.homepage {
-	border: 3px solid black;
 }
 
 /* homepage company values stlying and spacing */
@@ -356,13 +367,6 @@ h4.value_heading {
 	color: #000000;
 }
 
-#values,
-#benefits,
-#who_are_we,
-#introduction {
-	padding: 1em;
-}
-
 /* Homepage footer */
 #foot {
 	background-color: #224e2c;
@@ -381,22 +385,9 @@ h4.value_heading {
 }
 
 /* Adaptive home page content */
-/* Make footer stick to the bottom of the page at larger screen sizes */
-@media screen and (min-height: 1200px) {
-	#foot {
-		padding-bottom: 8rem;
-	}
-}
 
-/* Make value boxes go vertical at smaller screen sizes */
-@media screen and (max-width: 600px) {
-	#value_boxes {
-		display: flex;
-		flex-direction: column;
-		align-content: flex-end;
-	}
-}
-
+/* When the screen is >870px wide */
+/* 		The content splits into the left and right hand */
 @media screen and (min-width: 870px) {
 	#main_home {
 		display: flex;
@@ -425,6 +416,16 @@ h4.value_heading {
 
 	#values {
 		align-self: flex-end;
+	}
+}
+
+/* When the screen is <600px wide */
+/* 		Value boxes go vertical at smaller screen sizes */
+@media screen and (max-width: 600px) {
+	#value_boxes {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-end;
 	}
 }
 
