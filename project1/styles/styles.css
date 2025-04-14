@@ -644,7 +644,7 @@ fieldset {
 	background-color: rgb(240, 250, 242)
 }
 
-/* Sub header styling in job descriptions*/
+/* Sub header (h4) styling in job descriptions*/
 .job_desc_h {
 	font-weight: bold;
 }
