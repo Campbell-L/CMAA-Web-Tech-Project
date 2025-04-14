@@ -525,7 +525,8 @@ fieldset {
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 1em;
-	margin-left: 2em;
+	margin-left: 3em;
+	margin-right: 1em;
 }
 
 /* postcode errors */
